@@ -32,6 +32,7 @@ h1 {
 
 公立はこだて未来大学
 商業情報科学部 ロードサイド行脚科
+イオン北海道コース
 
 `$ curl https://perufetch.peruki.dev`
 

@@ -1,7 +1,23 @@
 ---
 marp: true
+theme: default
 ---
-## MIERUNEインターンシップに行ってきた
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Noto Sans JP&display=swap');
+section {
+    font-family: 'Noto Sans JP', serif;
+    background-color: "#fafafa";
+}
+h1 {
+  font-size: 1.3em;
+  color: #244;
+  border-bottom: 1px solid #ccc;  
+  line-height: 1.5em;
+}
+</style>
+
+# MIERUNEインターンシップに行ってきた
 多田 瑛貴
 
 ![bg right:30%](mierune.jpg)
@@ -136,7 +152,7 @@ https://roadside-explorer.pages.dev/
 
 ---
 
-## おまけ: 活用した技術
+# おまけ: 活用した技術
 
   - **MapLibre GL JS**
    フロントエンドの地図表示
@@ -151,7 +167,7 @@ https://roadside-explorer.pages.dev/
 
 ---
 
-## おまけ: 活用できなかったが、触れられた技術
+# おまけ: 活用できなかったが、触れられた技術
 
  - **Valhalla**
     道路情報の付加には一部で利用できたが、問題が発生したため、最終的にはqgis_processを代替として使用
@@ -164,7 +180,7 @@ https://roadside-explorer.pages.dev/
 
 ---
 
-**空間データ処理、JSよりもPythonのほうが早い**
+# 空間データ処理、JSよりもPythonのほうが早い
 選択肢の幅も含め...
 
 ![w:800 h:350](wrapper.JPG)
@@ -189,7 +205,7 @@ CTOが机の横にいる状態で作業
 
 ---
 
-## アウトプットの1つ目？
+# アウトプットの1つ目？
 
 
 ---

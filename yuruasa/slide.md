@@ -17,7 +17,7 @@ h1 {
 }
 </style>
 
-# MIERUNEインターンシップに行ってきた
+# MIERUNEインターンに行ってきた
 多田 瑛貴
 
 ![bg right:30%](mierune.jpg)

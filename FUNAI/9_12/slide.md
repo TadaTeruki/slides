@@ -13,7 +13,7 @@ math: mathjax
 公立はこだて未来大学 システム情報科学部
 複雑系知能学科 複雑系コース 2年
 
-![bg right:45%](resources/犬.jpg)
+![bg right:40%](resources/犬.jpg)
 
 ---
 

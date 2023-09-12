@@ -12,6 +12,5 @@ section {
 h1,h2,h3,h4 {
     color: #244;
     border-bottom: 1px solid #ccc;
-    text-shadow: 0.05rem 0.05rem 0.15rem #ccc5;
     line-height: 1.5em;
 }

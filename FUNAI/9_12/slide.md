@@ -1,19 +1,19 @@
 ---
 marp: true
 theme: perutheme0
-title: ゼロから作るDeepLearning5章
+title: ゼロから作るDeepLearning5章1/2
 math: mathjax
 ---
 
 **ゼロから作るDeepLearning**
-# 5章. 誤差逆伝播法 1/2
+# 5章 誤差逆伝播法 1/2
 
 
 多田 瑛貴
 公立はこだて未来大学 システム情報科学部
 複雑系知能学科 複雑系コース 2年
 
-![bg right:30%](resources/犬.jpg)
+![bg right:45%](resources/犬.jpg)
 
 ---
 

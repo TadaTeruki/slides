@@ -1,5 +1,7 @@
 # ぺるきのスライド集
 
+https://slides.peruki.dev/
+
 スライドの本体は`slides`内にあります。
 
 以下のコマンドにて内容を更新できます。
@@ -16,5 +18,5 @@ title---        スライドのタイトル
 description---  スライドの説明
 ```
 
-`git push origin main`すれば自動的にCloudflare Pagesにデプロイされます。
+`git push origin main`すれば自動的にデプロイされます。
 

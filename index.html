@@ -47,7 +47,7 @@
                         const description = info.description;
                         const source = info.source;
                         const date = info.date.split("/");
-                        const urlStr = window.location.hostname+path+source;
+                        const urlStr = path+source;
                         urlList +=  "<a href=\""+urlStr+"\">"+title+"</a> "+date[0]+"年"+date[1]+"月"+date[2]+"日<br>"+description+"<br>"
                     } else {
                         urlList += key+ recordNestedStructure(obj[key], depth + 1, url+"/"+key);

@@ -1,7 +1,4 @@
 # ぺるきのスライド集
-
-<br>
-
 **https://slides.peruki.dev/**
 
 <br>

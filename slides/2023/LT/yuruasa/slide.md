@@ -1,6 +1,7 @@
 ---
 marp: true
 theme: default
+author: Teruki TADA
 ---
 
 <style>

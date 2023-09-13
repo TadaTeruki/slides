@@ -1,6 +1,10 @@
 # ぺるきのスライド集
 
+<br>
+
 **https://slides.peruki.dev/**
+
+<br>
 
 スライドの本体は`slides`内にあります。
 
@@ -19,4 +23,6 @@ description---  スライドの説明
 ```
 
 `git push origin main`すれば自動的にデプロイされます。
+
+Copyright (c) 2023 Teruki TADA
 

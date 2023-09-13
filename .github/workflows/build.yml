@@ -22,7 +22,7 @@ jobs:
       run: npm install
 
     - name: Build
-      run: npx make build-all
+      run: make build-all
 
     - name: Commit and Push Changes
       run: |

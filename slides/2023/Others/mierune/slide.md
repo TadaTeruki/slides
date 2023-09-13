@@ -1,7 +1,7 @@
 ---
 marp: true
 title: MIERUNEインターンシップ 成果発表
-theme: default
+theme: perutheme0
 author: Teruki TADA
 ---
 # MIERUNE インターンシップ 成果発表

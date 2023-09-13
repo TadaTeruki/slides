@@ -108,7 +108,7 @@
 
                 for (const part of parts) {
                     if (!currentObj[part]) {
-                    currentObj[part] = {};
+                    currentObj[part] = {}; 
                     }
                     currentObj = currentObj[part];
                 }
@@ -130,7 +130,7 @@
                         const source = info.source;
                         const date = info.date.split("/");
                         const urlStr = path+source;
-                        urlList +=  "<a href="+urlStr+"\"><div class=\"slide\"><span class=\"title\">"+title+"</span>&nbsp;<span class=\"date\"> "+date[0]+"-"+date[1]+"-"+date[2]+"</span><div class=\"description\">"+description+"</div></div></a>"
+                        urlList +=  "<a href="+urlStr+"><div class=\"slide\"><span class=\"title\">"+title+"</span>&nbsp;<span class=\"date\"> "+date[0]+"-"+date[1]+"-"+date[2]+"</span><div class=\"description\">"+description+"</div></div></a>"
                     } else {
                         if(depth) {
                             const head = depth+1;

@@ -1,6 +1,6 @@
 # ぺるきのスライド集
 
-https://slides.peruki.dev/
+**https://slides.peruki.dev/**
 
 スライドの本体は`slides`内にあります。
 

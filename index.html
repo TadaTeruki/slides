@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ぺるきのスライド集</title>
+        <link rel="shortcut icon" href="./犬.webp">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+            body {
+                font-family: 'Noto Sans JP', sans-serif;
+            }
+            .nested {
+                margin-left: 1.5rem;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>ぺるきのスライド集</h1>
+        <h3>これまでに発表したスライド集です。</h3>
+        <div id="urlList"></div>
+
+        <script src="routes/routes.js"></script>
+        <script>
+            let infoMap = new Map();
+            const groupedRoutes = SLIDE_ROUTES.reduce((result, route) => {
+                infoMap.set("/"+route[0], route[1]);
+                const parts = route[0].split('/');
+                let currentObj = result;
+
+                for (const part of parts) {
+                    if (!currentObj[part]) {
+                    currentObj[part] = {}; // オブジェクトを作成
+                    }
+                    currentObj = currentObj[part];
+                }
+                return result;
+            }, {});
+
+
+            function recordNestedStructure(obj, depth = 0, url = "") {
+                let urlList = "<div class=\"nested\">"
+                for (const key in obj) {
+                    if (Object.keys(obj[key]).length === 0 || Object.keys(obj[key])[0] == "") {
+                        const path = url+"/"+key+"/";
+                        const info = infoMap.get(path);
+                        const title = info.title;
+                        const description = info.description;
+                        const source = info.source;
+                        const date = info.date.split("/");
+                        const urlStr = window.location.hostname+path+source;
+                        urlList +=  "<a href=\""+urlStr+"\">"+title+"</a> "+date[0]+"年"+date[1]+"月"+date[2]+"日<br>"+description+"<br>"
+                    } else {
+                        urlList += key+ recordNestedStructure(obj[key], depth + 1, url+"/"+key);
+                    }
+                }
+                return urlList+"</div>";
+            }
+            
+            document.getElementById("urlList").innerHTML=recordNestedStructure(groupedRoutes);
+        </script>
+    </body>
+</html>

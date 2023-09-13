@@ -1,0 +1,4 @@
+source---       index.html
+date---         2023/9/10
+title---        MIERUNEインターンに行ってきた
+description---  ゆるい勉強会(旭川)での発表内容です。

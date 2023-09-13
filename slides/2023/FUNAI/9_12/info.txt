@@ -1,0 +1,4 @@
+source---           index.html
+date---             2023/9/12
+title---            FUNAI輪読会資料: 誤差逆伝播法
+description---      ゼロから作るDeepLearning 5章 誤差逆伝播法 5.1-5.3の資料です。

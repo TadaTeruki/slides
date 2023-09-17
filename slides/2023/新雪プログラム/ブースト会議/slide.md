@@ -36,9 +36,9 @@ author: Teruki TADA
 # 自己紹介
 
 **主要分野**
- - 手続き的生成
+ - 手続き的生成 (CG)
 
-![bg right:60%](https://firebasestorage.googleapis.com/v0/b/portfolio-server-77440.appspot.com/o/images%2Farticles%2F7ee8cf04-a809-40d8-bf1f-d0c03633930d%2Fdisplayed.jpg?alt=media&token=0af628b3-2b0c-4056-8fde-034c206c8c8a)
+![bg right:60% w:800](https://firebasestorage.googleapis.com/v0/b/portfolio-server-77440.appspot.com/o/images%2Farticles%2F7ee8cf04-a809-40d8-bf1f-d0c03633930d%2Fimage.png?alt=media&token=cea58449-ebf3-41c1-a8a6-01e5395baca6)
 
 ---
 

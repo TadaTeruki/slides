@@ -4,9 +4,19 @@ theme: perutheme0
 author: Teruki TADA
 ---
 <style>
-p {
-    font-size: larger;
+h1, h2, h3 {
+    font-size: 50pt;
 }
+
+p, ul {
+    font-size: 40pt;
+}
+
+em a {
+    font-size: large;
+    color: #aaa;
+}
+
 </style>
 
 # 函館市電LT オープニング
@@ -50,7 +60,8 @@ p {
 ---
 
 # スライドの発表時間
-- 停留所間の3区間ごとに時間を切ります(約6分)。
+- 停留所間の3区間(約6分)ごとに
+時間を振ります。
 - 時間が超過すると、強制的に切ります。
 - 時間が余った場合は、質疑応答や休憩時間に使用します。
 

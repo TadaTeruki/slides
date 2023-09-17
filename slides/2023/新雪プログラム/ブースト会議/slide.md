@@ -82,6 +82,10 @@ author: Teruki TADA
 
 ---
 
+![bg](tomo2.jpg)
+
+---
+
 ![bg](innnoshima.jpg)
 
 ---
@@ -191,6 +195,7 @@ author: Teruki TADA
 
  - 基盤ライブラリの製作 *80%完了*
    - パラメータの設定を文献にそのまま従った実装
+   - https://github.com/TadaTeruki/terrain-rs
  - ラッパーライブラリの製作 *製作中*
    - 誰でも扱える形で基盤ライブラリにアクセスするライブラリ
  - ドキュメント *製作中*

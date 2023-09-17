@@ -14,3 +14,8 @@ h1,h2,h3,h4 {
     border-bottom: 1px solid #ccc;
     line-height: 1.5em;
 }
+
+em {
+    color: #888;
+    font-size: smaller;
+}

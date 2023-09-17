@@ -69,8 +69,8 @@ author: Teruki TADA
 ![bg right:45%](hidaka.jpg)
 ![bg vertical](hidaka_chiriin.png)
 
-*写真: 北海道新ひだか町静内の風景と、その標高データ*
-*(出典:地理院地図)*
+*写真: 北海道新ひだか町静内の風景と
+その標高データ (出典:地理院地図)*
 
 ---
 
@@ -90,7 +90,7 @@ author: Teruki TADA
 
 # 先行研究の例
 
-Guillaume Cordonnier, Jean Braun, Marie-Paule Cani, Bedrich Benes, Eric Galin, et al.. Large Scale Terrain Generation from Tectonic Uplift and Fluvial Erosion. Computer Graphics Forum, 2016, Proc. EUROGRAPHICS 2016, 35 (2), pp.165-175. ⟨10.1111/cgf.12820⟩. ⟨hal-01262376⟩
+*Guillaume Cordonnier, Jean Braun, Marie-Paule Cani, Bedrich Benes, Eric Galin, et al.. Large Scale Terrain Generation from Tectonic Uplift and Fluvial Erosion. Computer Graphics Forum, 2016, Proc. EUROGRAPHICS 2016, 35 (2), pp.165-175. ⟨10.1111/cgf.12820⟩. ⟨hal-01262376⟩*
 
 
 ---

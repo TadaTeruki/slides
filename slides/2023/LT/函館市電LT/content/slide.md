@@ -5,9 +5,16 @@ author: Teruki TADA
 ---
 
 <style>
+
 p, ul {
     font-size: larger;
 }
+
+em a {
+    font-size: large;
+    color: #aaa;
+}
+
 </style>
 
 **行かなきゃ人生終了！**
@@ -29,10 +36,20 @@ p, ul {
 
 # ああ...！ロードサイド行きたい...！
 
+![bg right:55%](opening/roadside.jpg)
 
 ---
 
-# そうだ！ロードサイド行こう！
+# そうだ！ロードサイド行こう！！！
+
+---
+
+# ロードサイドとは！？
+
+郊外型店舗の集まる場所
+**感動できる**
+
+![bg right:55%](opening/roadside.jpg)
 
 ---
 
@@ -55,25 +72,42 @@ p, ul {
 
 # そういえば...夏のインターン...
 
+![bg right:30%](opening/mierune.jpg)
 
 ---
 
 # こんなものを開発したなぁ...
 
+
+![bg right:50%](https://user-images.githubusercontent.com/69315285/267650583-907fafee-2ac0-4666-9280-e8a5ef8ac162.jpg)
+
 ---
 
 # Roadside Explorer
 
+全国のロードサイドの位置を推定・可視化
+
+![bg right:50% w:400](opening/qr.png)
+
 ---
 
-**うおおおお！！！！**
+**うおおおお！！！**
 
-# 他にもあるぞ！！！！
+# 他にも見つかるぞ！！！！
+
+
+---
+
+ということで
 
 ---
 
 **行かなきゃ人生終了！**
 # 道南の素晴らしいロードサイド3選
+
+![bg right](yakumo/roadside.jpg)
+![bg right](esashi/pl1.jpg)
+![bg right](ohma/pl1.jpg)
 
 ---
 
@@ -86,29 +120,48 @@ p, ul {
 函館以外の道南では一番有名
 
 **でも、実は未だ行けていない...！**
-今日の発表は妄想で語る
+今日の発表では
+軽めに・妄想で語る
+
+![bg right:45%](yakumo/roadside.jpg)
+
+*https://www.iju-join.jp/prefectures/hokkaido/47/index.html*
 
 ---
 
 # うおお！！！ケーズデンキだ！！！
+![w:900](yakumo/ks.jpg)
+
+*https://hakodatedayo.blog.jp/archives/51178945.html*
 
 ---
 
 # 山岡家だ！！！
 
+![bg right:60%](yakumo/yamaokaya.jpg)
+
+*https://ameblo.jp/koba773/entry-12607294473.html*
+
 ---
 
 # マックスバリュだ！！！
 
+![bg right:60%](yakumo/maxvalu.jpg)
+
+*https://www.aeon-hokkaido.jp/mv/shop/yakumo/*
+
 ---
 
 # 八雲のロードサイド
-大きめの家電量販店
-道南では函館圏以外たぶんここだけ
+大型家電量販店
+道南では函館圏以外多分ここだけ
 初めて国道5号を渡る時ビビる
 
+![bg right:45%](yakumo/roadside.jpg)
 
 **素晴らしい**
+
+*https://www.iju-join.jp/prefectures/hokkaido/47/index.html*
 
 ---
 
@@ -121,9 +174,16 @@ p, ul {
 江差は岬の切り立った場所にある街
 高低差が激しく、土地の余裕もないはず
 
+![](esashi/ls2.jpg)
+
 ---
 
 # 地図を見てみよう
+
+---
+
+**あきれかえるほど
+平和な南檜山**
 
 ---
 
@@ -151,7 +211,7 @@ p, ul {
 ---
 
 # パチンコ屋だ！！！
-**しかも、競合までいる！！**
+**しかも、目の前に競合までいる！！**
 
 ![](esashi/pachinko.jpg)
 
@@ -238,9 +298,7 @@ p, ul {
 
 ---
 
-# 三つ目: 北海道大間町
-
-**うおおおおお！！！！**
+# 三つ目: 北海道大間町！！！
 
 ---
 
@@ -333,19 +391,32 @@ p, ul {
 
 # 八雲
 
+![bg right:70%](yakumo/roadside.jpg)
+
+*https://www.iju-join.jp/prefectures/hokkaido/47/index.html*
+
+
 ---
 
-# 柳崎
+# 江差柳崎
+
+![bg right:70%](esashi/pl1.jpg)
 
 ---
 
-# そして...大間
+# 大間
+
+![bg right:70%](ohma/pl1.jpg)
 
 ---
 
 **八雲・柳崎・大間**
 
 # 道南三大ロードサイドだ！！！
+
+![bg right](yakumo/roadside.jpg)
+![bg right](esashi/pl1.jpg)
+![bg right](ohma/pl1.jpg)
 
 ---
 

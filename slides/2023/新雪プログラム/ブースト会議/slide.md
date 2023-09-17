@@ -11,8 +11,8 @@ author: Teruki TADA
 
 <br>
 
-公立はこだて未来大学 システム情報科学部
-複雑系知能学科 多田 瑛貴
+多田 瑛貴
+*公立はこだて未来大学 システム情報科学部*
 
 ![bg right:40%](square.png)
 
@@ -20,12 +20,10 @@ author: Teruki TADA
 
 # 自己紹介
 
-公立はこだて未来大学 システム情報科学部
-複雑系知能学科 多田 瑛貴
+**多田 瑛貴**
 
-**HP**&emsp;portfolio.peruki.dev
-**X(Twitter)**&emsp;@PerukiFUN
-**GitHub**&emsp;TadaTeruki
+*公立はこだて未来大学 システム情報科学部
+複雑系知能学科 複雑系コース 2年*
 
 主要分野
  - 手続き的生成
@@ -79,6 +77,11 @@ author: Teruki TADA
 # 現状の課題
 
 現存の地形生成の方法は、表現の幅に限界があると考えている
+
+---
+
+![bg](tomo.jpg)
+
 
 ---
 
@@ -219,7 +222,7 @@ author: Teruki TADA
 
 <br>
 
-公立はこだて未来大学 システム情報科学部
-複雑系知能学科 多田 瑛貴
+多田 瑛貴
+*公立はこだて未来大学 システム情報科学部*
 
 ![bg right:40%](square.png)

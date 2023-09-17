@@ -20,25 +20,9 @@ author: Teruki TADA
 
 # 自己紹介
 
-**多田 瑛貴**
+**多田 瑛貴** ただ てるき
 
-*公立はこだて未来大学 システム情報科学部
-複雑系知能学科 複雑系コース 2年*
-
-主要分野
- - 手続き的生成
- - Linuxデスクトップアプリケーション
- - 地理情報システム (最近から)
-
-*写真: roadside-explorer.peruki.dev*
-
-![bg right:40%](./RoadsideExplorer.jpg)
-
----
-
-# 自己紹介
-
-「ぺるき」という名前で活動しています
+*公立はこだて未来大学 システム情報科学部 複雑系知能学科 複雑系コース 2年*
 
 **HP**&emsp;portfolio.peruki.dev
 **X(Twitter)**&emsp;@PerukiFUN
@@ -46,6 +30,26 @@ author: Teruki TADA
 
 
 ![](./welcome.png)
+
+---
+
+# 自己紹介
+
+**主要分野**
+ - 手続き的生成
+
+![bg right:60%](https://firebasestorage.googleapis.com/v0/b/portfolio-server-77440.appspot.com/o/images%2Farticles%2F7ee8cf04-a809-40d8-bf1f-d0c03633930d%2Fdisplayed.jpg?alt=media&token=0af628b3-2b0c-4056-8fde-034c206c8c8a)
+
+---
+
+# 自己紹介
+
+**主要分野**
+ - 地理情報システム (最近から)
+
+*写真: roadside-explorer.peruki.dev*
+
+![bg right:40%](./RoadsideExplorer.jpg)
 
 ---
 
@@ -58,6 +62,7 @@ author: Teruki TADA
 
 ![](landscape.png)
 
+*実際に試験的に生成したもの*
 
 ---
 
@@ -99,6 +104,22 @@ author: Teruki TADA
 
 ![bg vertical](innnoshima.jpg)
 ![bg vertical](minecraft.png)
+
+---
+
+![bg brightness:120%](openttd.png)
+
+---
+
+# 既存手法の限界
+
+ダイナミックでも、リアルとは言えない
+
+**なぜ？**
+
+特殊なノイズ (パーリンノイズ) の重ね合わせによる手法は
+純粋に計算機科学的アプローチであり、実際の地形の仕組みに即していない
+
 
 ---
 
@@ -151,6 +172,7 @@ author: Teruki TADA
 # 先行研究の課題点
 
  - 地形学の研究の範囲に収まっている
+   - 目的は、数理モデルの評価
    - **ツールとしての汎用性・使いやすさは重視されてこなかった**
      - 正しく扱うには地形学の知識が必要 (パラメータなど)
      - MATLAB専用など、実行環境も限定される
@@ -159,9 +181,17 @@ author: Teruki TADA
 
 ---
 
-# 開発中のプレビュー
+# 開発中のプロダクトのプレビュー
 
 **Rust言語**による実装
+
+---
+
+無地のデータに対して
+地形作用処理を
+適用したもの
+
+![bg right:60%](lem.png)
 
 ---
 
@@ -170,7 +200,24 @@ author: Teruki TADA
 
 ---
 
+パーリンノイズに対して
+地形作用処理を
+適用+着色したもの
+*検証用*
+
+![bg right:60%](square.png)
+
+---
+
 ![bg](square.png)
+
+---
+
+# 具体的な技術構成
+
+ - 地形生成ライブラリを**Rust**にて開発
+   - 様々なプラットフォームで扱えるよう**WebAssemblyに対応**
+ - ビジュアライザを**JavaScript**にて開発
 
 ---
 
@@ -183,14 +230,6 @@ author: Teruki TADA
 ゲーム開発・映像制作における表現の可能性を
 大きく広げられる
 ![bg right:40%](square.png)
-
----
-
-# 具体的な技術構成
-
- - 地形生成ライブラリを**Rust**にて開発
-   - 様々なプラットフォームで扱えるよう**WebAssemblyに対応**
- - ビジュアライザを**JavaScript**にて開発
 
 ---
 

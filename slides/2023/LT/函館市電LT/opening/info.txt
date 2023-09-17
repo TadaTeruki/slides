@@ -1,0 +1,4 @@
+source---       index.html
+date---         2023/9/18
+title---        函館市電LT オープニング
+description---  函館市電LTの開会用の資料です。

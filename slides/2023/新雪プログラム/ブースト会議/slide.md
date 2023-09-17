@@ -154,6 +154,8 @@ author: Teruki TADA
 
 # 開発中のプレビュー
 
+**Rust言語**による実装
+
 ---
 
 ![bg](lem.png)

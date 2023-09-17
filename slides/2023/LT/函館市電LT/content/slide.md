@@ -160,7 +160,7 @@ em a {
 大型家電量販店
 初めて国道5号を渡る時ビビる
 
-![bg right:40%](yakumo/roadside.jpg)
+![bg right:35%](yakumo/roadside.jpg)
 
 **素晴らしい**
 
@@ -243,13 +243,13 @@ em a {
 **柳崎** (やなぎさき) **町**
 
 
-![bg right:40%](esashi/pl1.jpg)
+![bg right:35%](esashi/pl1.jpg)
 
 ---
 
 # 江差のロードサイド
 
-![bg right:40%](esashi/map1.jpg)
+![bg right:35%](esashi/map1.jpg)
 
 江差・厚沢部
 乙部・上ノ国と
@@ -265,7 +265,7 @@ em a {
 檜山地方の隠れた拠点にも見える
 国道から見通せる<br>風力発電が壮観
 
-![bg right:40%](esashi/pl1.jpg)
+![bg right:35%](esashi/pl1.jpg)
 
 **素晴らしい**
 
@@ -358,7 +358,7 @@ em a {
 前述と比べると小規模
 でも、そこにロードサイドはある！！
 
-![bg right:40%](ohma/pl1.jpg)
+![bg right:35%](ohma/pl1.jpg)
 
 ---
 ![bg w:900](matta.jpg)
@@ -399,7 +399,7 @@ em a {
 商圏は小さいものの
 力強く生きている
 
-![bg right:40%](ohma/pl1.jpg)
+![bg right:35%](ohma/pl1.jpg)
 
 **素晴らしい**
 

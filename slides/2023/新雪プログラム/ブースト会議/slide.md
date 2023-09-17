@@ -235,7 +235,7 @@ author: Teruki TADA
 
 # 現在の進捗
 
- - 基盤ライブラリの製作 *80%完了*
+ - 基盤ライブラリの製作 *60%完了*
    - パラメータの設定を文献にそのまま従った実装
    - https://github.com/TadaTeruki/terrain-rs
  - ラッパーライブラリの製作 *製作中*

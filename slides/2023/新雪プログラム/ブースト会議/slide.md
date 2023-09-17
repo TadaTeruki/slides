@@ -252,7 +252,7 @@ author: Teruki TADA
 
 ![h:350](hakodate.png)
 
- - **サンプルゲーム**を作れないか？ *future work*
+ - **サンプルゲーム**を作れないか？ *future workかもしれない*
 
 ---
 

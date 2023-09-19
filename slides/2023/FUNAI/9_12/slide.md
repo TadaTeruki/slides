@@ -217,7 +217,7 @@ $x$と $y$ を入力として$z=(x+y)^2$ を表現
 
 <br>
 
-![](resources/逆伝播2.drawio.png)
+![](resources/逆伝播訂正.drawio.png)
 
 ---
 
@@ -296,7 +296,7 @@ $$\frac{\partial z}{\partial x}=y, \frac{\partial z}{\partial y}=x$$
    - 逆伝播を用いることで、各パラメータに対する勾配を
      同時に求めることができ、計算効率が高い
 
-![](resources/逆伝播2.drawio.png)
+![](resources/逆伝播訂正.drawio.png)
 
 ---
 

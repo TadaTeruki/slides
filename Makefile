@@ -13,5 +13,10 @@ build-slide:
 build-all: crawl
 	bash scripts/build-all.sh $(shell cat $(CRAWL_OUTPUT_PATH)/routes.txt)
 
+.PHONY: create-new
+create-new:
+	mkdir -p slides/$(shell date +%Y)/${DIR}
+	cp -r templates/* slides/$(shell date +%Y)/${DIR}
+
 .PHONY: ready
-ready: build-all
+	ready: build-all

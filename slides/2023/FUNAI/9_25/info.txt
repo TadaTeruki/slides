@@ -1,0 +1,4 @@
+source---           index.html
+date---             2002/8/14
+title---            タイトル
+description---      詳細

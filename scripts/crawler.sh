@@ -6,7 +6,7 @@ output_file="${output_path}/routes"
 > "$output_file.js"
 echo "const SLIDE_ROUTES = [" > "$output_file.js"
 
-find . -name 'info.txt' -print | while read -r file; do
+find . -name 'info.txt' -print | grep -v "templates/" | while read -r file; do
   relative_path="${file#./}"
   relative_path="${relative_path%info.txt}"
   if [ -n "$relative_path" ]; then

@@ -1,7 +1,7 @@
+slides/2023/FUNAI/9_12/
+slides/2023/FUNAI/9_25/
 slides/2023/LT/函館市電LT/content/
 slides/2023/LT/函館市電LT/opening/
 slides/2023/LT/ゆるい勉強会in旭川/yuruasa/
-slides/2023/新雪プログラム/ブースト会議/
-slides/2023/FUNAI/9_12/
-slides/2023/FUNAI/9_25/
 slides/2023/Others/mierune/
+slides/2023/新雪プログラム/ブースト会議/

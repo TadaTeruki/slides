@@ -369,7 +369,7 @@ XEvent ev;
 
 ---
 
-# ウインドウの最前面移動
+# KeyPress: ウインドウの最前面移動
 ```c
     if(ev.type == KeyPress && ev.xkey.subwindow != None)
         XRaiseWindow(dpy, ev.xkey.subwindow);
@@ -378,9 +378,11 @@ XEvent ev;
 イベントが`KeyPress`であり、かつカーソル上にウインドウがあれば
 それを最前面に移動する
 
+*`Alt+F1`しかグラブされていないのでこれだけでOK*
+
 ---
 
-# ウインドウの選択
+# ButtonPress: ウインドウの選択
 
 
 ```c
@@ -403,7 +405,7 @@ XButtonEvent start;
 
 ---
 
-# ウインドウの移動・リサイズ
+# MotionNotify: ウインドウの移動・リサイズ
 
 ```c
     else if(ev.type == MotionNotify && start.subwindow != None)
@@ -423,7 +425,7 @@ XButtonEvent start;
    - 移動かリサイズかは、`start`内に格納されたボタンの種類で判断
 ---
 
-# ウインドウの選択の解除
+# ButtonRelease: ウインドウの選択の解除
 
 ```c
     else if(ev.type == ButtonRelease)

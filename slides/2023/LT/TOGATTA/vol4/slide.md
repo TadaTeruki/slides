@@ -1,18 +1,20 @@
 ---
 marp: true
-theme: perutheme0
+theme: perutheme1
 title: 読むWM "tinyWM" をちゃんと読む
+footer: 読むWM "tinyWM" をちゃんと読む TOGATTA SERVER LT Vol.4 (2023/9/30)
+paginate: true
 math: mathjax
 author: Teruki TADA
 ---
 
 # 読むWM "tinyWM" をちゃんと読む
 
-ぺるき *多田 瑛貴*
+by ぺるき @PerukiFUN 
 
 TOGATTA SERVER LT Vol.4 - 2023/9/30
 
-![bg right:25%](resources/tinywm.png)
+![bg right:25%](resources/FUN.jpg)
 
 ---
 
@@ -38,7 +40,7 @@ TOGATTA SERVER LT Vol.4 - 2023/9/30
  - 地理情報システム
  - Linuxデスクトップ
 
-![bg vertical right:50%](https://firebasestorage.googleapis.com/v0/b/portfolio-server-77440.appspot.com/o/images%2Farticles%2F7ee8cf04-a809-40d8-bf1f-d0c03633930d%2Fimage.png?alt=media&token=cea58449-ebf3-41c1-a8a6-01e5395baca6)
+![bg vertical right:30%](https://firebasestorage.googleapis.com/v0/b/portfolio-server-77440.appspot.com/o/images%2Farticles%2F7ee8cf04-a809-40d8-bf1f-d0c03633930d%2Fimage.png?alt=media&token=cea58449-ebf3-41c1-a8a6-01e5395baca6)
 
 ![bg right](resources/RoadsideExplorer.jpg)
 
@@ -55,7 +57,7 @@ Linux系のGUIの中身のお話
 
 ---
 
-# X11 (X Window System)とは
+# X11 (X Window System) とは
 
 Unix、Linux系OSでよく使われる
 ウィンドウシステムの一つ
@@ -64,7 +66,7 @@ Unix、Linux系OSでよく使われる
  - 入力デバイスの管理
  - ディスプレイ(出力デバイス)への出力
 
-
+*"X11"そのものは何らかのソフトウェアを指さない*
 
 ![bg right:25% w:200](resources/x11.png)
 
@@ -74,14 +76,12 @@ Unix、Linux系OSでよく使われる
 
 クライアントサーバーモデルに基づいている
  - **Xサーバー**
-   - ディスプレイの描画
+   - ディスプレイへの出力
    - キーボードやマウスの入力の受け取り
  - **Xクライアント**
    - 主に、各GUIアプリケーション
 
 これらソフトウェアが**Xプロトコル**を通してやりとりする
-
-*"X11"そのものは何らかのソフトウェアを指さない*
 
 ---
 
@@ -98,7 +98,7 @@ GUIの実現には、ユーザーの操作をそれらに反映する
 
 ---
 
-# WM (ウインドウマネージャ) とは
+# WM (ウインドウマネージャ)
 
 特別なXクライアントで、主に以下を担当
 
@@ -152,10 +152,10 @@ https://github.com/mackstann/tinywm
  - ウインドウの拡大縮小
 
 *タイトルバーなどの装飾は実装しない*
+*画像: https://qiita.com/ai56go/items/dec1307f634181d923f5*
 
 ![bg right:35% h:300](resources/tinywm2.png)
 
-*画像: https://qiita.com/ai56go/items/dec1307f634181d923f5*
 
 ---
 
@@ -172,7 +172,7 @@ WM開発に入門するアプローチの一つ
 ---
 
 # ソースコードを見てみよう
-https://github.com/mackstann/tinywm
+https://github.com/mackstann/tinywm/blob/master/tinywm.c
 
 ---
 
@@ -252,7 +252,7 @@ int main(void)
 
 # 入力イベントのグラブ
 
-発生する入力イベントは、基本的にウインドウ(Xクライアント)側で受理される
+発生する入力イベントは、基本的にウインドウ側で受理される
 
 しかしWM開発においては、入力の情報をウインドウではなく
 WM側で受け取りたいときがある
@@ -389,15 +389,13 @@ XEvent ev;
 
 # ButtonPress: ウインドウの選択
 
-
 ```c
 XWindowAttributes attr;
 XButtonEvent start;
 ```
 
 ```c
-    else if(ev.type == ButtonPress && ev.xbutton.subwindow != None)
-    {
+    else if(ev.type == ButtonPress && ev.xbutton.subwindow != None){
         XGetWindowAttributes(dpy, ev.xbutton.subwindow, &attr);
         start = ev.xbutton;
     }
@@ -472,7 +470,7 @@ int main(void)
 
 ---
 
-# 読めた！
+**読めた！**
 
 ---
 
@@ -498,8 +496,7 @@ int main(void)
    - このあたりを実装しようとすると
    難易度が結構上がる 
  - タスクバーやメニュー、ランチャーも作る
-   - オレオレデスクトップ環境を作ろう
-
+   - **オレオレデスクトップ環境を作ろう**
  - etc...
 
 *写真は自分が過去に`sway`用に作ったdock*

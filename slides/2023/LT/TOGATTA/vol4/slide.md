@@ -12,7 +12,7 @@ author: Teruki TADA
 
 TOGATTA SERVER LT Vol.4 - 2023/9/30
 
-![bg right:30%](resources/tinywm.png)
+![bg right:25%](resources/tinywm.png)
 
 ---
 
@@ -26,7 +26,7 @@ TOGATTA SERVER LT Vol.4 - 2023/9/30
 **GitHub** TadaTeruki
 **HP** portfolio.peruki.dev
 
-![bg right:40% w:500](peruki.jpg)
+![bg right:35% w:500](peruki.jpg)
 
 ---
 
@@ -60,16 +60,17 @@ Linux系のGUIの中身のお話
 Unix、Linux系OSでよく使われる
 ウィンドウシステムの一つ
  - GUI環境の基礎を提供
+    - ウインドウの機能など
  - 入力デバイスの管理
  - ディスプレイ(出力デバイス)への出力
 
 
 
-![bg right:40% w:200](resources/x11.png)
+![bg right:25% w:200](resources/x11.png)
 
 ---
 
-# X11 (X Window System)の構造
+# X11の構造
 
 クライアントサーバーモデルに基づいている
  - **Xサーバー**
@@ -126,7 +127,7 @@ GUIの実現には、ユーザーの操作をそれらに反映する
 
 *画像は自分の環境の`i3`*
 
-![bg right:45% h:350](resources/myenv.png)
+![bg right:40% h:320](resources/myenv.png)
 
 ---
 
@@ -138,7 +139,7 @@ https://github.com/mackstann/tinywm
 ミニマムに実装したもの
 *実用には耐え難いが、ちゃんと動く！*
 
-![bg right:45%](resources/tinywm.png)
+![bg right:40%](resources/tinywm.png)
 
 ---
 
@@ -449,7 +450,7 @@ XButtonEvent start;
 
 ---
 
-# 読めた！
+# tinyWMの概観
 
 ```c
 #include <X11/Xlib.h>
@@ -468,6 +469,10 @@ int main(void)
     }
 }
 ```
+
+---
+
+# 読めた！
 
 ---
 

@@ -60,9 +60,8 @@ Linux系のGUIの中身のお話
 Unix、Linux系OSでよく使われる
 ウィンドウシステムの一つ
  - GUI環境の基礎を提供
- - ウインドウを画面上に描画したり
-   マウスやキーボードによる入出力を
-   ディスプレイに反映する、など
+ - 入力デバイスの管理
+ - ディスプレイ(出力デバイス)への出力
 
 
 
@@ -93,6 +92,7 @@ Unix、Linux系OSでよく使われる
 一方で、ウインドウの位置関係・前後関係などを
 よしなに設定してくれる機能は持たない
 
+GUIの実現には、ユーザーの操作をそれらに反映する
 橋渡し的な存在が必要 → **WM(ウインドウマネージャ)** が用いられる
 
 ---
@@ -210,7 +210,7 @@ int main(void)
 
 ---
 
-# Xサーバーへの接続 - XOpenDisplay
+# Xサーバーへの接続
 
 ```c
 Display * dpy;
@@ -219,8 +219,7 @@ Display * dpy;
 ```c
 if(!(dpy = XOpenDisplay(0x0))) return 1;
 ```
-
-この関数で初めてXサーバーとの通信が確立される
+`XOpenDisplay`で初めてXサーバーとの通信が確立される
 `dpy`には、Xサーバーの情報が挿入される *NULLだったら異常終了*
 
 `dpy`を他のいろんな関数に引き回しすことで、Xサーバーとのやり取りを行う
@@ -252,10 +251,12 @@ int main(void)
 
 # 入力イベントのグラブ
 
-発生する入力イベントは、基本的にウインドウ(クライアント)側で受理される
+発生する入力イベントは、基本的にウインドウ(Xクライアント)側で受理される
 
-しかしWM開発においては、入力の情報ウインドウではなくWM側で受け取りたいときがある
-*例えば、ウインドウを移動するときや、リサイズするとき*
+しかしWM開発においては、入力の情報をウインドウではなく
+WM側で受け取りたいときがある
+
+*例えば、ウインドウの移動やリサイズなどのGUIの操作*
 
 このとき、WM側で入力を受け取るようにするための操作が**グラブ**
 
@@ -263,18 +264,17 @@ int main(void)
 
 # 入力イベントのグラブ
 
-`XGrabKey`で`Alt+F1`をグラブ
-
 ```c
 XGrabKey(dpy, XKeysymToKeycode(dpy, XStringToKeysym("F1")), Mod1Mask,
         DefaultRootWindow(dpy), True, GrabModeAsync, GrabModeAsync);
 ```
 
+`XGrabKey`で`Alt+F1`をグラブ
+*ウインドウの最前面移動に使われる*
+
 ---
 
 # 入力イベントのグラブ
-
-`XGrabButton`で`Alt+右/左クリック`をグラブ
 
 ```c
 XGrabButton(dpy, 1, Mod1Mask, DefaultRootWindow(dpy), True,
@@ -284,6 +284,10 @@ XGrabButton(dpy, 3, Mod1Mask, DefaultRootWindow(dpy), True,
         ButtonPressMask|ButtonReleaseMask|PointerMotionMask, 
         GrabModeAsync, GrabModeAsync, None, None);
 ```
+
+`XGrabButton`で`Alt+右/左クリック`をグラブ
+
+*ウインドウの移動とリサイズに使われる*
 
 ---
 

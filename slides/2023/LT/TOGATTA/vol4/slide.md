@@ -34,13 +34,17 @@ TOGATTA SERVER LT Vol.4 - 2023/9/30
 
 # 自己紹介
 
+地図とパソコンが好きです
+
 **主な興味**
+ - LTサークル Mariners' Conference 部長
+    - 最近の活動: #函館市電LT
  - 手続き的生成 (CG)
    - 特に地形生成
  - 地理情報システム
  - Linuxデスクトップ
 
-![bg vertical right:30%](https://firebasestorage.googleapis.com/v0/b/portfolio-server-77440.appspot.com/o/images%2Farticles%2F7ee8cf04-a809-40d8-bf1f-d0c03633930d%2Fimage.png?alt=media&token=cea58449-ebf3-41c1-a8a6-01e5395baca6)
+![bg vertical right:35%](https://scrapbox.io/files/64eb70716dd253001c6dbc50.png)
 
 ![bg right](resources/RoadsideExplorer.jpg)
 

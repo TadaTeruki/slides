@@ -6,6 +6,7 @@ math: mathjax
 author: Teruki TADA
 ---
 
+*FUNAI 輪読会*
 **ゼロから作るDeepLearning**
 # 5章 誤差逆伝播法 2/2
 
@@ -13,7 +14,7 @@ author: Teruki TADA
 公立はこだて未来大学 システム情報科学部
 複雑系知能学科 複雑系コース 2年
 
-![bg right:40%](resources/犬.jpg)
+![bg right:40%](resources/keshiki.jpg)
 
 ---
 
@@ -137,7 +138,7 @@ print(dapple, dapple_num) # -> 2.2, 110
 
 ---
 
-# 乗算レイヤ
+# 乗算レイヤの実装
 
 ```py
 class MulLayer:
@@ -155,13 +156,14 @@ class MulLayer:
     def backward(self, dout):
         dx = dout * self.y
         dy = dout * self.x
-
         return dx, dy
 ```
 
+*https://colab.research.google.com/drive/1aGsxpOVapW9NOHPsOXsjTmKFxdC62Z96#scrollTo=PHEIJTYaknW3*
+
 ---
 
-# 加算レイヤ
+# 加算レイヤの実装
 ```py
 class AddLayer:
     def __init__(self):
@@ -179,11 +181,15 @@ class AddLayer:
         return dx, dy
 ```
 
+*https://colab.research.google.com/drive/1aGsxpOVapW9NOHPsOXsjTmKFxdC62Z96#scrollTo=XmMRRTavkvxk*
+
 ---
 
 # りんごの値段の問題を解いてみる
 
  > 太郎くんはスーパーで1個100円のりんごを2個買った。支払う金額を求めよ。ただし、消費税は10%とする。
+
+*https://colab.research.google.com/drive/1aGsxpOVapW9NOHPsOXsjTmKFxdC62Z96#scrollTo=mUkVOzF3k7Re&line=1&uniqifier=1*
 
 ---
 
@@ -222,7 +228,9 @@ y=
 $$
 
 グラフは右図の青線のようになる
-(橙線はその微分(後述)) 
+*橙線はその微分(後述)*
+
+*https://colab.research.google.com/drive/1aGsxpOVapW9NOHPsOXsjTmKFxdC62Z96#scrollTo=U_uV2H99l1xq*
 
 ![bg right:50% h:500](resources/relu.png)
 
@@ -255,8 +263,8 @@ $$
 
 # ReLUレイヤの実装
 
-```
-```
+*https://colab.research.google.com/drive/1aGsxpOVapW9NOHPsOXsjTmKFxdC62Z96#scrollTo=_vja_aBs3cwS*
+
 ---
 
 
@@ -264,22 +272,24 @@ $$
 
 $$y=\frac{1}{1+\exp{(-x)}}$$
 
-
-
 グラフは右図の青線のようになる
-(橙線はその微分(後述)) 
+
+*橙線はその微分(後述)*
 
 ![bg right:50% h:500](resources/sigmoid.png)
+
+*https://colab.research.google.com/drive/1aGsxpOVapW9NOHPsOXsjTmKFxdC62Z96#scrollTo=2cMOXieflvWN*
 
 ---
 
 # Sigmoidレイヤの勾配
 
-ここで、$x$に関する$y$の微分は
+ここで、$x$に関する$y$の微分は以下のようになる
 
 $$\frac{\partial y}{\partial x}=y^2\exp{(-x)}$$
 
-となる(導出は省略)。
+
+*導出は省略*
 
 ![bg right:50% h:200](resources/sigmoid1.drawio.png)
 
@@ -314,8 +324,7 @@ $$\frac{\partial y}{\partial x}=y(y-1)$$
 
 # Sigmoidレイヤの実装
 
-```
-```
+*https://colab.research.google.com/drive/1aGsxpOVapW9NOHPsOXsjTmKFxdC62Z96#scrollTo=nAUucqwRmNbj*
 
 ---
 
@@ -331,9 +340,11 @@ $$\frac{\partial y}{\partial x}=y(y-1)$$
 *参照: 3.3 多次元配列の計算*
 
 
-この計算を行うレイヤを
+ここで用いられる行列計算を行うレイヤを
 **Afiineレイヤ**と呼ぶことにする
 *いわゆるAffine変換と直接の関係はない、ただやっている計算が同じというだけ*
+
+$\mathbf{X}$: 入力、$\mathbf{W}$: 重みの行列、$\mathbf{Y}$: 出力
 
 ![bg right:40% w:350](resources/Affine1.drawio.png)
 
@@ -341,29 +352,36 @@ $$\frac{\partial y}{\partial x}=y(y-1)$$
 
 # Afiineレイヤの逆伝播
 
----
+計算グラフは`図5-24`のようになる
 
-# Afiineレイヤの実装
+この計算グラフを用いて逆伝播を導くと、以下のようになる
 
-```
-```
+*行列の各要素を書き下せば、行列でも今までのスカラー値と同じように求められる*
+
+$$\frac{\partial L}{\partial \mathbf{X}} = \frac{\partial L}{\partial \mathbf{Y}} \cdot \mathbf{W}^T$$
+$$\frac{\partial L}{\partial \mathbf{W}} =  \mathbf{X}^T \cdot \frac{\partial L}{\partial \mathbf{Y}}$$
+
+*導出方法をより詳しく知りたい方*
+*Qiita: Affineレイヤの逆伝播を地道に成分計算する*
+*https://qiita.com/yuyasat/items/d9cdd4401221df5375b6*
 
 ---
 
 # 「バッチ版」Affineレイヤについて
 
-先程の実装では、入力するデータは1個(1次元のベクトル)だった
-N個のデータ (=「バッチ」) も同時に扱えないか？
-*データの集まりは「バッチ」と呼ばれる*
+先程の実装では、入力するデータ$\mathbf{X}$は
+1つのデータ(1次元のベクトル)だった
 
-入力を行列にし、Affineレイヤに適用する**バッチ版Affineレイヤ**を実装していく
+`図5-25`の示すように
+N個のデータ (=バッチ) でも同様に扱うことができる
+
+このとき、$\mathbf{X}$と $\mathbf{Y}$はデータのベクトルを結合した行列になる
 
 ---
 
 # バッチ版Afiineレイヤの実装
 
-```
-```
+*https://colab.research.google.com/drive/1aGsxpOVapW9NOHPsOXsjTmKFxdC62Z96#scrollTo=UVqN02cG3vHT*
 
 ---
 
@@ -372,10 +390,16 @@ N個のデータ (=「バッチ」) も同時に扱えないか？
 **Softmax関数ってなんだったっけ**
 
 入力された値を正規化して出力
-(出力の総和が1になるように変形)
-
+*正規化: 出力の総和が1になるように変形*
 
 この計算を行うレイヤを**Softmaxレイヤ**と呼ぶことにする
+
+```
+入力: [4.96578994 4.60163166 3.22858034 4.39713805 0.3080219 ]
+出力: [0.40873582 0.28398197 0.07194194 0.23146233 0.00387793]
+```
+
+*https://colab.research.google.com/drive/1aGsxpOVapW9NOHPsOXsjTmKFxdC62Z96#scrollTo=qoe2pPIXpvAj*
 
 ---
 
@@ -386,7 +410,7 @@ N個のデータ (=「バッチ」) も同時に扱えないか？
  - **学習**: 答えを出すためのパラメータを調整する処理
 
 推論の段階では、出力の最大値にだけ興味があるので、正規化は求められない
-→Softmaxレイヤいらない、Affineレイヤの出力(スコア)で処理を終了
+→Softmaxレイヤは使わず、Affineレイヤの出力(スコア)で処理を終了
 
 Softmaxレイヤは**学習の段階**で求められる
 →損失関数を適用し、性能を評価するため
@@ -399,32 +423,42 @@ Softmaxレイヤは**学習の段階**で求められる
 
 損失関数である**交差エントロピー誤差**を含めたレイヤとして実装
 
----
-
-# Softmax-with-Lossレイヤの計算グラフ
-
-```
-```
+`図5-29`
 
 非常に複雑なため、書籍では省略されている (**付録A**を参照)
 ここでは結果のみを紹介
 
 ---
 
-簡略化し、次のように考える
+# Softmax-with-Lossレイヤの逆伝播
 
-```
-```
+簡略化し、`図5-30`のように考えると
+
+入力を$\mathbf{A} (a_1, a_2, a_3 ...)$ 
+$\mathbf{A}$を正規化したものを$\mathbf{Y} (y_1, y_2, y_3 ...)$とすると
+逆伝播は教師データ$\mathbf{T} (t_1, t_2, t_3 ...)$に対して
+
+$$\frac{\partial L}{\partial \mathbf{A}} = \mathbf{Y} - \mathbf{T}$$
+
+つまり$y_i-t_i$を求めれば良い
+
+
+*非常に簡単になった！*
+
 
 ---
 
-# Softmax関数の逆伝播
-
-**なんか綺麗になった！**
-
+# Softmax-with-Lossレイヤの逆伝播
 交差エントロピー誤差は、Softmax関数の損失関数として
 都合の良いように設計されている (偶然の産物ではない)
-一方で、もう一つの損失関数である2乗和誤差は、恒等関数に対して都合が良い
+*一方で、もう一つの損失関数である2乗和誤差は、恒等関数に対して都合が良い*
+
+---
+
+# Softmax-with-Lossレイヤの実装
+
+
+*https://colab.research.google.com/drive/1aGsxpOVapW9NOHPsOXsjTmKFxdC62Z96#scrollTo=YKTA7C3D3xdS*
 
 
 ---
@@ -435,15 +469,15 @@ Softmaxレイヤは**学習の段階**で求められる
 
 # ニューラルネットワークの学習の全体図
 
-### 前提
+**前提: 学習とは**
 ニューラルネットワークには「重み」「バイアス」があり
-それらを訓練データに適応するように調整していきたい
+それらを訓練データに適応するように調整していく
 
 ---
 
 # ニューラルネットワークの学習の全体図
 
-### 学習のステップ
+学習のステップ
 
 1. **ミニバッチ**
     訓練データの中からランダムに1つデータを選び出す
@@ -459,27 +493,33 @@ Softmaxレイヤは**学習の段階**で求められる
 
 # 誤差逆伝播法に対応したニューラルネットワーク
 
-全体のレイヤの構造はこのようになる
+全体のレイヤの構造は`図5-28`のようになる
 
----
+実装は以下リンクのようになる
 
-# 誤差逆伝播法に対応したニューラルネットワーク
-
-実際に実装してみる
-
-```
-```
+*https://colab.research.google.com/drive/1aGsxpOVapW9NOHPsOXsjTmKFxdC62Z96#scrollTo=V_By3sHX3Rtl*
 
 ---
 
 # 誤差逆伝播法の勾配確認
 
-**その勾配、本当に正しい？**
-
 誤差逆伝播法は数値微分と比べ、実装が複雑であり、ミスも起こりやすい
 
 そこで、数値微分による勾配の計算結果と比較し、実装に誤りがないかを確認する
 (このような作業を**勾配確認**という)
+
+
+---
+
+# 誤差逆伝播法で学習を行ってみる
+
+勾配の正しさを確認し、実際にMNISTを使った学習を行う
+
+**勾配確認**
+*https://colab.research.google.com/drive/1aGsxpOVapW9NOHPsOXsjTmKFxdC62Z96#scrollTo=Gn7VREiD3USR*
+
+**学習**
+*https://colab.research.google.com/drive/1aGsxpOVapW9NOHPsOXsjTmKFxdC62Z96#scrollTo=7NPbvzGR3dnK*
 
 ---
 
@@ -487,9 +527,24 @@ Softmaxレイヤは**学習の段階**で求められる
 
  - 乗算・加算だけでなく、ニューラルネットワークの実装に求められる
     複合的な関数や行列計算にも逆伝播を適用できる
- - 損失関数として交差エントロピー誤差を用いることで、
-    Softmax-with-Lossレイヤによる逆伝播の計算を簡略化できる
+ - ニューラルネットワークの構成要素をレイヤとして実装することで、
+    逆伝播の適用により勾配の計算を効率的に求められる
  - 誤差逆伝播法は実装が難しいことから、数値微分と計算結果と比較することで
     実装の正しさを検証する「勾配確認」が行われる
 
+---
+
+# 次章について
+
+ニューラルネットワークのよりよい学習に重要なテクニックを学ぶ
+ - パラメータの更新方法の再検討
+    今までの方法(SGD)の課題と、
+    その解決策となるMomentum, AdaGrad, Adamについて理解
+ - 重みの初期値の設定の再検討
+   - 重みの初期値による学習結果への影響を観察し、重要性を理解
+   - Xavierの初期値やHeの初期値などの手法について理解
+ - Batch Normalizationの導入による学習の改善
+ - 過学習を抑制する手法
+   - Weight Decay, Dropoutについて理解
+ - 重み・バイアス以外のパラメータ(ハイパーパラメータ)の調整方法
 

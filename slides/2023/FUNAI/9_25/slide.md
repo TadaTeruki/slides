@@ -341,7 +341,7 @@ $$\frac{\partial y}{\partial x}=y(y-1)$$
 
 
 ここで用いられる行列計算を行うレイヤを
-**Afiineレイヤ**と呼ぶことにする
+**Affineレイヤ**と呼ぶことにする
 *いわゆるAffine変換と直接の関係はない、ただやっている計算が同じというだけ*
 
 $\mathbf{X}$: 入力、$\mathbf{W}$: 重みの行列、$\mathbf{Y}$: 出力
@@ -350,7 +350,7 @@ $\mathbf{X}$: 入力、$\mathbf{W}$: 重みの行列、$\mathbf{Y}$: 出力
 
 ---
 
-# Afiineレイヤの逆伝播
+# Affineレイヤの逆伝播
 
 計算グラフは`図5-24`のようになる
 
@@ -379,7 +379,7 @@ N個のデータ (=バッチ) でも同様に扱うことができる
 
 ---
 
-# バッチ版Afiineレイヤの実装
+# バッチ版Affineレイヤの実装
 
 *https://colab.research.google.com/drive/1aGsxpOVapW9NOHPsOXsjTmKFxdC62Z96#scrollTo=UVqN02cG3vHT*
 

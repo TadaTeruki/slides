@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: perutheme0
-title: 読むWM tinyWMをちゃんと読む
+title: 読むWM "tinyWM" をちゃんと読む
 math: mathjax
 author: Teruki TADA
 ---

@@ -1,7 +1,7 @@
 ---
 marp: true
 theme: perutheme0
-title: template
+title: FUNAI輪読会 - ゼロから作るDeepLearning5章 2/2
 math: mathjax
 author: Teruki TADA
 ---

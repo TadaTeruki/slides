@@ -11,7 +11,7 @@ find . -name 'info.txt' -print | grep -v "templates/" | while read -r file; do
   relative_path="${relative_path%info.txt}"
   if [ -n "$relative_path" ]; then
     echo "$relative_path" >> "$output_file.txt"
-    info=$(cat $relative_path/info.txt | tr '\n' ';' | sed 's/---[[:space:]]*/\":\"/g' | sed 's/;/\",\"/g' | sed 's/;/\",\"/g')
+    info=$(cat $relative_path/info.txt | tr '\n' ';' | tr '"' ' ' | sed 's/---[[:space:]]*/\":\"/g' | sed 's/;/\",\"/g' | sed 's/;/\",\"/g')
     echo "[\"$relative_path\", {\"${info}\"}]," >> "$output_file.js"
   fi
 done

@@ -1,0 +1,35 @@
+/* @theme perutheme1 */
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import 'default';
+
+section {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #fff;
+    padding: 1.5rem;   
+}
+
+p, li {
+    margin-left: 1.5rem;
+}
+
+li li {
+    margin-left: 0;
+}
+
+h1,h2,h3,h4 {
+    color: #488;
+    line-height: 1.5em;
+}
+
+h1 {
+    padding: 1rem;
+    border-bottom: 4px solid #ddd;
+    background-color: #fafafa;
+    border-radius: 2px;
+}
+
+em {
+    color: #888;
+    font-size: smaller;
+}

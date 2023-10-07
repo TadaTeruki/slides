@@ -1,0 +1,4 @@
+source---           index.html
+date---             2023/10/07
+title---            読むWM"tinyWM"をちゃんと読む
+description---      tinyWMの処理の流れを理解し、X11でのウインドウマネージャ開発の感覚を掴む

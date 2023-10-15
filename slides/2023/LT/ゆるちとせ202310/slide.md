@@ -27,6 +27,7 @@ author: Teruki TADA
 **HP** portfolio.peruki.dev
 
 ![bg right:35% w:500](peruki.jpg)
+![bg vertical right:35% w:500](resources/kao.jpg)
 
 ---
 
@@ -182,7 +183,7 @@ https://twitter.com/search?q=%23%E5%87%BD%E9%A4%A8%E5%B8%82%E9%9B%BBLT&src=typed
 
 # まとめ
 
-頭のおかしい技術イベントも、
+頭のおかしい技術イベントも
 現実的なプランさえ立てれば、あとはアイデア次第でなんとかなる
 
 千歳や札幌でもぜひなんかやってください

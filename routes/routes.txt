@@ -5,5 +5,6 @@ slides/2023/LT/函館市電LT/content/
 slides/2023/LT/函館市電LT/opening/
 slides/2023/LT/未来祭LT/
 slides/2023/LT/ゆるい勉強会in旭川/yuruasa/
+slides/2023/LT/ゆるちとせ202310/
 slides/2023/Others/mierune/
 slides/2023/新雪プログラム/ブースト会議/

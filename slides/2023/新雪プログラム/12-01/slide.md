@@ -63,8 +63,8 @@ section a:link {
 高品質な地形を容易に生成する
 計算基盤を提供
 
-![bg right:50% h:300](example1.png)
-![bg right:50% h:300](terrain.png)
+![bg right:45% h:300](example1.png)
+![bg right:45% h:300](terrain.png)
 
 ---
 

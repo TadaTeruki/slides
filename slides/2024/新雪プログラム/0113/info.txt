@@ -1,0 +1,4 @@
+source---           index.html
+date---             2024/01/13
+title---            新雪プログラム DEMO DAY
+description---      新雪プログラムで行っているプロジェクトの最終報告です。

@@ -12,4 +12,5 @@ const SLIDE_ROUTES = [
 ["slides/2023/新雪プログラム/1201/", {"source":"index.html","date":"2023/12/1","title":"12月進捗報告","description":"新雪プログラムで行っているプロジェクトの進捗報告です。"}],
 ["slides/2023/新雪プログラム/ブースト会議/", {"source":"index.html","date":"2023/9/17","title":"新雪プログラム ブースト会議","description":"新雪プログラムのプロジェクト「ゲーム・映像表現の可能性を広げる地形生成ライブラリの開発」の説明資料です。"}],
 ["slides/2023/Others/mierune/", {"source":"index.html","date":"2023/9/8","title":"MIERUNEインターンシップ 成果発表","description":"MIERUNE Inc. インターンシップでの成果発表の資料です。"}],
+["slides/2024/新雪プログラム/0113/", {"source":"index.html","date":"2024/01/13","title":"新雪プログラム DEMO DAY","description":"新雪プログラムで行っているプロジェクトの最終報告です。"}],
 ];

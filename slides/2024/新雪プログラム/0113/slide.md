@@ -32,8 +32,13 @@ em {
     color: rgb(200, 200, 200);
 }
 
-section h1,h2,h3,h4,h5,h6 {
+section h1,h2,h3,h4 {
     color: rgb(240, 180, 80);
+}
+
+section h5 {
+    color: rgb(240, 240, 240);
+    font-size: 1.7em;
 }
 
 section a:link {
@@ -73,16 +78,17 @@ Minecraftをはじめ多くのゲームで実装されている
 
 # 地形生成について
 
-単純なノイズの重ね合わせで生成されることが多い
+特殊なノイズ (パーリンノイズ) の
+重ね合わせで生成されることが多い
 
 ![bg right:30% vertical w:350](https://user-images.githubusercontent.com/69315285/150670142-3a5530cf-30f3-4dd7-9d34-36e9aec0c988.png)
 ![bg right:30% vertical w:350](https://user-images.githubusercontent.com/69315285/150670088-e690b5f4-b15f-4950-b959-a143277994f1.png)
 
 ----
 
-# 思っていること
+# プロジェクトの動機
 
-先行事例について
+地形生成の先行事例について
 それぞれの要件には即しているかもしれないが、物足りない
 
 **よりリアルかつ雄大な**地形が生成されるのを見てみたい
@@ -93,13 +99,13 @@ Minecraftをはじめ多くのゲームで実装されている
 
 ---
 
-写真: 広島県福山市 - 仙酔島
+**写真: 広島県福山市 - 仙酔島**
 
 ![bg](resources/tomo.jpg)
 
 ---
 
-写真: 広島県福山市 - 仙酔島
+**写真: 広島県福山市 - 仙酔島**
 
 ![bg](resources/tomo2.jpg)
 
@@ -158,13 +164,13 @@ Minecraftをはじめ多くのゲームで実装されている
 *かつ、それがオープンかつ汎用的であると嬉しい*
 
 
-![bg right:40%](resources/tomo.jpg)
+![bg right:35%](resources/tomo.jpg)
 
 ---
 
-# 成果物
+##### 成果物について
 
-![bg right:35%](resources/terrain2.webp)
+![bg](resources/terrain.webp)
 
 ---
 
@@ -174,13 +180,6 @@ Minecraftをはじめ多くのゲームで実装されている
 
 ![bg right:50%](resources/fastlemweb.png)
 
----
-
-# Web地図フレームワークによる3D可視化
-
-Maplibre GL JSによる3D地図
-
-**https://prototype-web-map.fastlem.peruki.dev/**
 
 
 ---
@@ -203,7 +202,10 @@ WebAssembly対応、JSでも実行可能
 **河川・氷河の侵食作用のシュミレーション**
 
 メディア用途を想定し
-地形の生成に必要なパラメータは2つに絞る
+地形の生成に必要なパラメータは**2つ**に絞る
+
+*- Erodibility (侵食に対する影響の強さ)*
+*- IsOutlet (海かどうか)*
 
 ```rust
 let terrain = TerrainGenerator::default()
@@ -213,10 +215,9 @@ let terrain = TerrainGenerator::default()
             .map(|_|
                 TopographicalParameters::default().
                 set_erodibility(1.0))
-            .collect::<_>(),
-    )
-    .generate()
-    .unwrap();
+                set_is_outlet(false))
+            .collect::<_>())
+    .generate();
 ```
 
 ![bg right:40% w:400](resources/lem.png)
@@ -228,7 +229,7 @@ let terrain = TerrainGenerator::default()
 
 **数値計算のほとんどを自力実装**
 *一部データ構造を除く*
- - 細かな最適化を行い、高速な生成を実現
+ - 高速性を意識し、細かな最適化に対応
 
 **ドキュメントおよびサンプルコードの整備**
  - 複雑な地形を生成するサンプルも整備
@@ -251,6 +252,32 @@ Webブラウザ上でも動作する
 
 ![bg right:40% w:400](https://github.com/carlosbaraza/web-assembly-logo/blob/master/dist/logo/web-assembly-logo-white-512px.png?raw=true)
 
+---
+
+# 複雑な地形の生成
+
+特殊なノイズ (パーリンノイズ) を
+**地形のパラメータ**に対して適用することで
+複雑な地形の生成を実現できる
+
+*ノイズをうまく引き伸ばすことで*
+*数理モデルでは扱いづらい断層やカルデラなども*
+*(「それらしく」ではあるが ) 再現できる*
+
+![bg right:30% vertical w:350](https://user-images.githubusercontent.com/69315285/150670142-3a5530cf-30f3-4dd7-9d34-36e9aec0c988.png)
+![bg right:30% vertical w:350](https://github.com/TadaTeruki/fastlem/blob/main/images/out/terrain_generation.png?raw=true)
+
+
+---
+
+# 作品例
+
+Maplibre GL JSによる3D地図
+
+**https://prototype-web-map.fastlem.peruki.dev/**
+
+![bg right:35%](resources/asahi.webp)
+
 
 ---
 
@@ -259,6 +286,7 @@ Webブラウザ上でも動作する
 地形生成の目標は概ね達成
 
 手続き的生成等に関する様々な制作物のサンドボックスに活用予定
+<br>
 
 手続き的に生成されたデータのみで**素敵な世界を作ってみたい**
 
@@ -281,4 +309,4 @@ Webブラウザ上でも動作する
 
 **ありがとうございました**
 
-![bg right:40%](resources/asahi.webp)
+![bg right:35%](resources/asahi.webp)

@@ -75,8 +75,8 @@ Minecraftをはじめ多くのゲームで実装されている
 
 単純なノイズの重ね合わせで生成されることが多い
 
-![bg right:30% vertical](https://user-images.githubusercontent.com/69315285/150670142-3a5530cf-30f3-4dd7-9d34-36e9aec0c988.png)
-![bg right:30% vertical](https://user-images.githubusercontent.com/69315285/150670088-e690b5f4-b15f-4950-b959-a143277994f1.png)
+![bg right:30% vertical w:350](https://user-images.githubusercontent.com/69315285/150670142-3a5530cf-30f3-4dd7-9d34-36e9aec0c988.png)
+![bg right:30% vertical w:350](https://user-images.githubusercontent.com/69315285/150670088-e690b5f4-b15f-4950-b959-a143277994f1.png)
 
 ----
 
@@ -193,6 +193,63 @@ Maplibre GL JSによる3D地図
 WebAssembly対応、JSでも実行可能
 
 ![bg right:40%](https://raw.githubusercontent.com/TadaTeruki/fastlem/main/images/out/terrain_generation_advanced.png)
+
+ライブラリとして、Rustプログラム上で利用
+
+---
+
+# 機能
+
+**河川・氷河の侵食作用のシュミレーション**
+
+メディア用途を想定し
+地形の生成に必要なパラメータは2つに絞る
+
+```rust
+let terrain = TerrainGenerator::default()
+    .set_model(model)
+    .set_parameters(
+        (0..num)
+            .map(|_|
+                TopographicalParameters::default().
+                set_erodibility(1.0))
+            .collect::<_>(),
+    )
+    .generate()
+    .unwrap();
+```
+
+![bg right:40% w:400](resources/lem.png)
+
+---
+
+# 実現に向けての取り組み
+
+
+**数値計算のほとんどを自力実装**
+*一部データ構造を除く*
+ - 細かな最適化を行い、高速な生成を実現
+
+**ドキュメントおよびサンプルコードの整備**
+ - 複雑な地形を生成するサンプルも整備
+ *左写真: examples/terrain_generation_advanced.rs*
+
+![bg right:40% w:400](https://raw.githubusercontent.com/TadaTeruki/fastlem/main/images/out/terrain_generation_advanced.png)
+
+---
+
+# 実行環境
+
+**Rust**言語のプログラム上
+高速かつ安全に実行可能
+
+WebAssemblyに対応し
+Webブラウザ上でも動作する
+*WebAssemblyの将来性を踏まえ、拡張性を実現*
+
+![bg right:40% w:200 vertical invert:100%](https://github.com/rust-lang/rust-artwork/blob/master/logo/rust-logo-512x512-blk.png?raw=true)
+
+![bg right:40% w:400](https://github.com/carlosbaraza/web-assembly-logo/blob/master/dist/logo/web-assembly-logo-white-512px.png?raw=true)
 
 
 ---

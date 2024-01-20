@@ -4,7 +4,7 @@ title: 新雪プログラム 8合目会議
 theme: default
 author: Teruki TADA
 paginate: true
-footer: 'ゲーム・映像表現の可能性を広げる 地形生成ライブラリの開発'
+footer: 'ゲーム・映像表現の可能性を広げる 地形生成ライブラリの開発's
 ---
 
 <style>
@@ -56,13 +56,6 @@ section a:link {
 
 ---
 
-# プロジェクト概要
-
-**地形学の数理モデルを取り入れた
-汎用性の高いオープンな地形生成ソフトウェア**
-
----
-
 # 地形生成について
 
 コンピュータによる地形生成は
@@ -73,6 +66,12 @@ Minecraftをはじめ多くのゲームで実装されている
 ![bg right:30% vertical](resources/minecraft.png)
 ![bg right:30% brightness:1.2](resources/openttd.png)
 
+---
+
+# プロジェクトの動機
+
+**地形学の数理モデルを取り入れた**
+**汎用性の高いオープンな地形生成ソフトウェア**
 
 ---
 
@@ -99,15 +98,34 @@ Minecraftをはじめ多くのゲームで実装されている
 
 ---
 
-**写真: 広島県福山市 - 仙酔島**
+**写真: 江差町 市街地**
 
-![bg](resources/tomo.jpg)
+![bg](resources/esashi1.webp)
 
 ---
 
-**写真: 広島県福山市 - 仙酔島**
+**写真: 江差町 鴎島**
 
-![bg](resources/tomo2.jpg)
+
+![bg](resources/esashi2.webp)
+
+---
+
+###### 写真: 函館市 立待岬
+
+![bg](resources/hakodate1.webp)
+
+---
+
+###### 写真: 北斗市上磯町
+
+![bg](resources/hakodate2.webp)
+
+---
+
+**写真: 斜里岳**
+
+![bg](resources/shari1.webp)
 
 ---
 
@@ -139,7 +157,7 @@ Minecraftをはじめ多くのゲームで実装されている
 *例: **badlands** (https://pypi.org/project/badlands/)*
 *写真は上記リンクより*
 
-![bg right:40% w:500](resources/badlands.jpg)
+![bg right:35% w:500](resources/badlands.jpg)
 
 ---
 
@@ -180,8 +198,6 @@ Minecraftをはじめ多くのゲームで実装されている
 
 ![bg right:50%](resources/fastlemweb.png)
 
-
-
 ---
 
 # 成果物概要
@@ -191,7 +207,7 @@ Minecraftをはじめ多くのゲームで実装されている
 プログラム言語: Rust
 WebAssembly対応、JSでも実行可能
 
-![bg right:35%](resources/terrain2.webp)
+![bg right:35%](resources/terrain4.png)
 
 
 ライブラリとして、Rustプログラム上で利用
@@ -207,19 +223,6 @@ WebAssembly対応、JSでも実行可能
 
 *- Erodibility (侵食に対する影響の強さ)*
 *- IsOutlet (海かどうか)*
-
-```rust
-let terrain = TerrainGenerator::default()
-    .set_model(model)
-    .set_parameters(
-        (0..num)
-            .map(|_|
-                TopographicalParameters::default().
-                set_erodibility(1.0))
-                set_is_outlet(false))
-            .collect::<_>())
-    .generate();
-```
 
 ![bg right:40% w:400](resources/lem.png)
 
@@ -263,7 +266,7 @@ Webブラウザ上でも動作する
 
 *ノイズをうまく引き伸ばすことで*
 *数理モデルでは扱いづらい断層やカルデラなども*
-*「擬似的に」再現できる*
+*(擬似的ではあるが) 再現できる*
 
 ![bg right:30% vertical w:400](https://user-images.githubusercontent.com/69315285/150670142-3a5530cf-30f3-4dd7-9d34-36e9aec0c988.png)
 ![bg right:30% vertical w:400](resources/terrain3.png)
@@ -278,6 +281,17 @@ Maplibre GL JSによる3D地図
 
 ![bg right:35%](resources/asahi.webp)
 
+---
+
+![bg vertical](resources/wannagenerate.png)
+
+![bg](resources/generated.png)
+
+---
+
+![bg](resources/esashi3.webp)
+
+![bg](resources/misaki.png)
 
 ---
 
@@ -309,4 +323,5 @@ Maplibre GL JSによる3D地図
 
 **ありがとうございました**
 
-![bg right:35%](resources/asahi.webp)
+
+![bg right:35%](resources/terrain2.webp)

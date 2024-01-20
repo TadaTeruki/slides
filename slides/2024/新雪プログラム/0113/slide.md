@@ -59,7 +59,7 @@ section a:link {
 # プロジェクト概要
 
 **地形学の数理モデルを取り入れた
-汎用性の高いオープンな地形生成ソフトウェア・ライブラリ**
+汎用性の高いオープンな地形生成ソフトウェア**
 
 ---
 
@@ -191,7 +191,8 @@ Minecraftをはじめ多くのゲームで実装されている
 プログラム言語: Rust
 WebAssembly対応、JSでも実行可能
 
-![bg right:40%](https://raw.githubusercontent.com/TadaTeruki/fastlem/main/images/out/terrain_generation_advanced.png)
+![bg right:35%](resources/terrain2.webp)
+
 
 ライブラリとして、Rustプログラム上で利用
 
@@ -262,11 +263,10 @@ Webブラウザ上でも動作する
 
 *ノイズをうまく引き伸ばすことで*
 *数理モデルでは扱いづらい断層やカルデラなども*
-*(「それらしく」ではあるが ) 再現できる*
+*「擬似的に」再現できる*
 
-![bg right:30% vertical w:350](https://user-images.githubusercontent.com/69315285/150670142-3a5530cf-30f3-4dd7-9d34-36e9aec0c988.png)
-![bg right:30% vertical w:350](https://github.com/TadaTeruki/fastlem/blob/main/images/out/terrain_generation.png?raw=true)
-
+![bg right:30% vertical w:400](https://user-images.githubusercontent.com/69315285/150670142-3a5530cf-30f3-4dd7-9d34-36e9aec0c988.png)
+![bg right:30% vertical w:400](resources/terrain3.png)
 
 ---
 

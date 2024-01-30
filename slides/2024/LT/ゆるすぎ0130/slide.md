@@ -152,7 +152,7 @@ https://opensource.org/license/bsd-3-clause/ *(3条項)*
 
 > *The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.*
 
-*ただし、MITライセンスではソースコード/バイナリの区別が無いことに注意*
+*ただし、MITライセンスはソースコード/バイナリの区別が無いのでまぎらわしい*
 
 ---
 
@@ -380,7 +380,14 @@ https://www.mozilla.org/en-US/MPL/2.0/
 
 # まとめ
 
- - 
+ - オープンソースライセンスは
+   著作権のもとでルールを果し、様々な利用を許諾するもの
+ - (OSI的な視点では) 必ずしもコードが公開されていることが
+    オープンソースであることを示さない
+ - 自由ソフトウェアとオープンソースは共通する部分も多いが
+    出発点となる思想が異なるので、混同できない
+ - GPL等、コピーレフトに基づくライセンスは
+   自由ソフトウェア運動 に基づくもの
  - ライセンスを選ぶのに
  "商用利用可能かどうか"という視点はあまり有効ではない
 

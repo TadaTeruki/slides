@@ -1,0 +1,4 @@
+source---           index.html
+date---             2024/01/30
+title---            オープンソースライセンス学び直し
+description---      よく使ういろいろなライセンスの学び直し

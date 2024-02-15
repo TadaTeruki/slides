@@ -1,0 +1,4 @@
+source---           index.html
+date---             2024/02/15
+title---            我が家のゴミ・Ops
+description---      ゴミが溜まって大変なことになる問題を解決するシステム

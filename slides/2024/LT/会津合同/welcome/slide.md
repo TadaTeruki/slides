@@ -26,7 +26,15 @@ Misskey: @peruki@misskey.peruki.dev
 
 ---
 
+![bg](resources/hokkaido.webp)
+![bg](resources/hakodate.webp)
+
+
+---
+
 # 未来大ってどんなところ
+
+---
 
 ---
 
@@ -63,9 +71,9 @@ Misskey: @peruki@misskey.peruki.dev
 
 ---
 
-**会津大**
+![](resources/Aizu_eval.jpg) **会津大: 4.03**
 
-**未来大**
+![](resources/FUN_eval.jpg) **未来大: 4.05**
 
 
 ## 未来大の勝利！！！

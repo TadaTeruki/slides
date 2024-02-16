@@ -65,6 +65,14 @@ Misskey: @peruki@misskey.peruki.dev
 
 ---
 
+![bg](resources/mados.webp)
+
+---
+
+![bg](resources/life1.webp)
+
+---
+
 ![bg](resources/life2.webp)
 ![bg](resources/life3.webp)
 

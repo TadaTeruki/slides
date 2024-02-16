@@ -1,10 +1,36 @@
 ---
 marp: true
 theme: perutheme0
-title: template
+title: はこだて未来大へようこそ
 math: mathjax
 author: Teruki TADA
 ---
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Noto Sans JP&display=swap');
+
+@import 'default';
+
+section {
+    font-family: 'Noto Sans JP', serif;
+    background-color: #fff;
+}
+
+h1,h2,h3,h4 {
+    color: #244;
+    border-bottom: 1px solid #ccc;
+    line-height: 1.5em;
+}
+
+em {
+    color: #888;
+    font-size: smaller;
+}
+
+p {
+    font-size: larger;
+}
+</style>
 
 # はこだて未来大へようこそ
 

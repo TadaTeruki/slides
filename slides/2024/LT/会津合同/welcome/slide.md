@@ -20,6 +20,9 @@ author: Teruki TADA
 X: @PerukiFUN
 Misskey: @peruki@misskey.peruki.dev
 
+
+![bg right:40% w:500](resources/me.jpeg)
+
 ---
 
 # 函館ってどこにある
@@ -35,6 +38,25 @@ Misskey: @peruki@misskey.peruki.dev
 # 未来大ってどんなところ
 
 ---
+
+![bg](resources/life2.webp)
+![bg](resources/life3.webp)
+
+---
+
+![bg](resources/lt1.webp)
+
+---
+
+![bg](resources/lt2.webp)
+
+---
+
+![bg](resources/shiden1.webp)
+
+---
+
+![bg](resources/shiden2.webp)
 
 ---
 
@@ -82,11 +104,12 @@ Misskey: @peruki@misskey.peruki.dev
 
 ## やっぱ窓の数が違ぇんだわ
 
+![w:900](resources/mados.webp)
+
+
 ---
 
 # まとめ
-
-いかがでしたか？ **未来大**は**会津大**に勝利しました
 
 未来大は面白いところです
 

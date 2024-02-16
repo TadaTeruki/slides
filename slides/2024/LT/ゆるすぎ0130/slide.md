@@ -1,6 +1,6 @@
 ---
 marp: true
-title: template
+title: オープンソースライセンス学び直し
 math: mathjax
 author: Teruki TADA
 paginate: true

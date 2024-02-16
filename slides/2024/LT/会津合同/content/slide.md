@@ -4,7 +4,35 @@ theme: perutheme0
 title: 我が家のゴミ・Ops
 math: mathjax
 author: Teruki TADA
+paginate: true
+footer: '我が家のゴミ・Ops'
 ---
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Noto Sans JP&display=swap');
+
+@import 'default';
+
+section {
+    font-family: 'Noto Sans JP', serif;
+    background-color: #fff;
+}
+
+h1,h2,h3,h4 {
+    color: #244;
+    border-bottom: 1px solid #ccc;
+    line-height: 1.5em;
+}
+
+em {
+    color: #888;
+    font-size: smaller;
+}
+
+p {
+    font-size: larger;
+}
+</style>
 
 # 我が家のゴミ・Ops
 
@@ -20,7 +48,8 @@ author: Teruki TADA
 # ごみ捨てのギャンブル化
 <br>
 
-「家がペットボトルで埋もれてしまった」
+「家がペットボトルで
+　　　埋もれてしまった」
 &emsp;↓
 「今日はなんの日かな」
 &emsp;↓
@@ -46,7 +75,7 @@ author: Teruki TADA
 
 「カレンダーを貼れ」→ プリンターがないんですよ
 「気づいたときに捨てにいけ」→ 時間ないんですよ
-「毎朝8時はカレンダーを確認しろ」→ 起きれるわけないじゃないですか
+「毎朝8時はカレンダーを確認しろ」→ 起きれるわけないじゃん
 
 ---
 
@@ -82,11 +111,14 @@ author: Teruki TADA
 ごみカレンダーは貼っておきたい、けど
 そもそもプリンターがない、あっても定期的に更新がいるから面倒
 
-サイネージを導入できないものかしら
+サイネージのようにして、自動で更新してくれるといい
 
 ---
 
 # これ使えるじゃん
+
+
+![bg right:40% w:500](resources/smaho.webp)
 
 *1年前に洗濯機にガシャンコし　使えなくなったはずのスマホ*
 
@@ -94,10 +126,15 @@ author: Teruki TADA
 
 # こんなものを開発
 
+---
+
+![bg w:1000](resources/gamen.png)
 
 ---
 
 # 技術要件
+ right:40% w:550
+![bg right:40% w:550](resources/gamen.png)
 
 URL: https://home-signage.pages.dev
 
@@ -120,6 +157,8 @@ PWAとして動作可能
 雪の時期にもバスに遅れることなく準備できる
 → **遅刻Ops**を実現
 
+![bg right:40% w:340](resources/bus.png)
+
 ---
 
 # でも、サイネージだけでは解決しない
@@ -135,31 +174,38 @@ PWAとして動作可能
 
 ---
 
-## 木を植えています 私たちはニトリです
-
+![bg](resources/nitori.png)
 
 ---
 
-### お、じゃあ俺も植えるか！
+### 木を植えています 私達はニトリです
+
+お、じゃあ俺も植えるか！
 
 ---
 
 # 早速、木を導入
 
 ![w:750](resources/hanger.png)
-*本当は、女子大生の服をかけて幸せに過ごしたかったのかもしれない木*
+*本当は、もう少しまともな使われ方をして幸せに過ごしたかったのかもしれない木*
 
 ---
 
 # 植樹
 
+
+![bg right:40% w:300 brightness:110%](resources/gomitree.jpg)
+
 ---
 
 # 使い方
 
+![bg right:40% w:300 brightness:110%](resources/gomitree.jpg)
+
 服のようにゴミ袋を引っ掛ける
 
-ゴミツリーは狭い空間にも生やすことが可能
+ゴミツリーは狭い空間にも
+生やすことが可能
 
 ゴミの溜め場所の新しい選択肢として
 **玄関** にも置けるように
@@ -199,6 +245,12 @@ PWAとして動作可能
 
 *空間が狭いので十分機能する*
 
+*最低*
+
+---
+
+# 結果
+
 ---
 
 # ゴミ捨てまでの流れ
@@ -209,14 +261,15 @@ PWAとして動作可能
 溜まりすぎていると、有機センサが知らせてくれる
 4. ゴミを捨てる
 
+---
 
 引きこもらない限りはしっかり機能する
 **実質、自動化できた！**
 
 ---
 
-# 結論
+# 我が家のゴミ・Ops
 
-カレンダーを貼ればいい
+![bg right:40% w:500](resources/devops.png)
 
 

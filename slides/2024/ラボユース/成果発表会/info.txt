@@ -1,0 +1,4 @@
+source---           index.html
+date---             2024/3/26
+title---            Rust製Linuxウインドウマネージャ開発を通じた良い設計へのアプローチ
+description---      サイボウズ・ラボユースの成果発表の資料

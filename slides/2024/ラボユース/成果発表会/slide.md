@@ -1,6 +1,6 @@
 ---
 marp: true
-title: template
+title: Rust製Linuxウインドウマネージャ開発を通じた良い設計へのアプローチ
 math: mathjax
 author: Teruki TADA
 paginate: true
@@ -96,6 +96,14 @@ WM開発を通して、適切なソフトウェア設計について議論
 
 # X11プロトコルの全体像
 
+
+
+---
+
+# 備考
+
+本プロジェクトでは、XServerとして既存のレファレンス実装を利用 (Xorg)
+
 ---
 
 # X11 WM開発における課題
@@ -181,10 +189,36 @@ X11とそれ以外で、ソフトウェアのモデルが大きく変わる
 
 *X11の問題点の多くは、そもそもX11のモデル自体に起因している*
 
-
 ---
 
 # ソフトウェア構造の全体像
+
+---
+
+全体像
+
+![bg](resources/ClearWMempty.png)
+
+---
+
+Clientに関する
+イベントの処理
+
+![bg](resources/ClearWMclient.png)
+
+---
+
+Clientの描画時
+
+![bg](resources/ClearWMdraw.png)
+
+---
+
+Clientとして
+扱われない
+XWindowの処理
+
+![bg](resources/ClearWMdirect.png)
 
 ---
 
@@ -204,7 +238,7 @@ Waylandプロトコルでは、XServerとWMにあたる部分が
 # Waylandプロトコルによる解決
 
 
-ただし、今までXServerが抽象化していた
+ただし、今までXServer(Xorg)が抽象化していた
 ハードウェアを扱う処理も同時に担うため、開発が困難である
 
 本プロジェクトでは、現状扱わないが

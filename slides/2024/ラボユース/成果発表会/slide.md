@@ -86,9 +86,6 @@ Rust製Linuxウインドウマネージャ開発を通じた
   そのアーキテクチャに様々な問題点や指摘されている
   *時代背景の違いにより、求められる機能も変わっている*
 
- - 既存のWMの多くはCで実装されており、開発効率や機能の抽象化
-   メモリ安全性に課題を有する
-
 *X11に対する指摘の例: Gajewska, Hania et al. “Why X is not our ideal window system.” Software: Practice and Experience 20 (1990): n. pag.*
 
 ---

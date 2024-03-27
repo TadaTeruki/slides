@@ -74,7 +74,17 @@ Rust製Linuxウインドウマネージャ開発を通じた
 *https://wiki.archlinux.org/title/Window_manager*
 
 
-![bg right:45% height:300](resources/myenv.png)
+![bg right:40% height:300](resources/myenv.png)
+
+---
+
+# 成果物デモ
+
+より良いソフトウェア設計を目指したWMの実装
+
+(現在も開発中)
+
+https://storage.googleapis.com/misskey-tadateruki-main/misskey-tadateruki-main/8d92d5b8-3875-4769-90a1-41286d1fe048.mp4
 
 
 ---
@@ -99,16 +109,14 @@ WM開発を通して、適切なソフトウェア設計について議論
 *Rustは、メモリ安全性や処理速度に優れており*
 *かつポリモーフィズムを前提とした設計が適用可能*
 
----
-
-# 成果物デモ
-
-https://storage.googleapis.com/misskey-tadateruki-main/misskey-tadateruki-main/8d92d5b8-3875-4769-90a1-41286d1fe048.mp4
-
 
 ---
 
-# X11プロトコルを用いたデスクトップの全体像
+# X11プロトコルの全体像
+
+---
+
+# X11プロトコルの全体像
 
 X11はクライアント・サーバーモデル
 

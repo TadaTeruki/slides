@@ -44,6 +44,7 @@ section h5 {
 section a:link {
     color: rgb(150, 200, 220);
 }
+
 </style>
 
 Rust製Linuxウインドウマネージャ開発を通じた
@@ -65,6 +66,14 @@ Rust製Linuxウインドウマネージャ開発を通じた
 
 *参考: Window manager - ArchWiki*
 *https://wiki.archlinux.org/title/Window_manager*
+
+---
+
+![bg](resources/myenv.png)
+
+---
+
+![bg](resources/wm.png)
 
 ---
 
@@ -94,15 +103,28 @@ WM開発を通して、適切なソフトウェア設計について議論
 
 ---
 
-# X11プロトコルの全体像
+# X11プロトコルを用いたデスクトップの全体像
 
+1. 入力 (イベント) をXServerが受け取る
+2. 対象となるXWindowの情報を取得
+3. WMにXWindowの情報とイベントを渡す
+4. WMからXServerに対象の操作を指示し、デスクトップを更新
 
+*XWindow: X11におけるウインドウ*
 
 ---
 
-# 備考
+![bg](resources/x11.png)
 
-本プロジェクトでは、XServerとして既存のレファレンス実装を利用 (Xorg)
+---
+
+# 本プロジェクトの仕様
+
+X11では、タイトルバーも独立したXWindow
+アプリケーションと組み合わせたものを「**Client**」と呼ぶこととする
+
+XServerとしてはXorg (レファレンス実装) を利用
+本プロジェクトでは、WMのみを開発
 
 ---
 
@@ -120,6 +142,10 @@ WM開発を通して、適切なソフトウェア設計について議論
 
 それらを操作するのは**WM側**
 
+![bg right:30% height:500](resources/x11.png)
+
+*本プロジェクトでは、XServerとして既存のレファレンス実装を利用 (Xorg)*
+
 ---
 
 # 課題1: 状態の分離
@@ -129,9 +155,10 @@ WM開発を通して、適切なソフトウェア設計について議論
 **キャッシュをしない場合**
 冗長な通信によるパフォーマンス低下
 
-
 **キャッシュをする場合**
 状態が複製され、変更時に整合性が取れない場合がある
+
+![bg right:30% height:500](resources/x11.png)
 
 ---
 
@@ -168,7 +195,7 @@ X11に依存する処理を分離したい
 議論の末、以下の処理を分離することに
 
 1. **ウインドウの位置・大きさの計算**
-   整合性の求められる部分を隠蔽
+   Client等、整合性の求められる部分を隠蔽
 
 2. **装飾の描画内容**
    描画機能を別ライブラリに委譲 (Cairo)
@@ -224,6 +251,8 @@ XWindowの処理
 
 # 成果物デモ
 
+https://storage.googleapis.com/misskey-tadateruki-main/misskey-tadateruki-main/8d92d5b8-3875-4769-90a1-41286d1fe048.mp4
+
 ---
 
 # Waylandプロトコルによる解決
@@ -232,6 +261,10 @@ Waylandプロトコルでは、XServerとWMにあたる部分が
 **Compositor**として一体化されている
 
 よりシンプルなモデルで、状態の分離を解決
+
+---
+
+![bg](resources/wayland.png)
 
 ---
 

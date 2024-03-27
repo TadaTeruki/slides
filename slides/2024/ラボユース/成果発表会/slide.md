@@ -84,7 +84,6 @@ Rust製Linuxウインドウマネージャ開発を通じた
 - LinuxのGUI環境のメジャーな基盤となっている
   X11プロトコルは、仕様が古く (1987年頃) 
   そのアーキテクチャに様々な問題点や指摘されている
-  *時代背景の違いにより、求められる機能も変わっている*
 
 *X11に対する指摘の例: Gajewska, Hania et al. “Why X is not our ideal window system.” Software: Practice and Experience 20 (1990): n. pag.*
 
@@ -99,6 +98,13 @@ WM開発を通して、適切なソフトウェア設計について議論
 
 *Rustは、メモリ安全性や処理速度に優れており*
 *かつポリモーフィズムを前提とした設計が適用可能*
+
+---
+
+# 成果物デモ
+
+https://storage.googleapis.com/misskey-tadateruki-main/misskey-tadateruki-main/8d92d5b8-3875-4769-90a1-41286d1fe048.mp4
+
 
 ---
 
@@ -224,6 +230,9 @@ X11とそれ以外で、ソフトウェアのモデルが大きく変わる
 
 Clientに関する
 イベントの処理
+*Client:*
+*タイトルバー*
+*+ アプリケーション*
 
 ![bg](resources/ClearWMclient.png)
 
@@ -240,12 +249,6 @@ Clientとして
 XWindowの処理
 
 ![bg](resources/ClearWMdirect.png)
-
----
-
-# 成果物デモ
-
-https://storage.googleapis.com/misskey-tadateruki-main/misskey-tadateruki-main/8d92d5b8-3875-4769-90a1-41286d1fe048.mp4
 
 ---
 

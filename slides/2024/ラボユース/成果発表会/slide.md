@@ -53,9 +53,22 @@ Rust製Linuxウインドウマネージャ開発を通じた
 # 良い設計へのアプローチ
 
 多田 瑛貴 Teruki TADA
-*公立はこだて未来大学 システム情報科学部*
+*システムソフトウェア研究開発 (星野ゼミ)*
 
 ![bg right:35%](resources/wm.png)
+
+---
+
+# 自己紹介
+
+**多田 瑛貴** Teruki TADA
+
+- 公立はこだて未来大学
+システム情報科学部 2年
+
+- 地図・FLOSS・グラフィックス
+
+![bg right:40% height:400](resources/tadateruki.jpg)
 
 ---
 
@@ -80,7 +93,7 @@ Rust製Linuxウインドウマネージャ開発を通じた
 
 # 成果物デモ
 
-より良いソフトウェア設計を目指したWMの実装
+良い設計を目指したWMの実装
 
 (現在も開発中)
 
@@ -103,7 +116,7 @@ https://storage.googleapis.com/misskey-tadateruki-main/misskey-tadateruki-main/8
 
 WM開発を通して、適切なソフトウェア設計について議論
 
-現代の要求に即し、拡張性・保守性に優れた
+保守性・可用性・拡張性に優れた
 モデルケース的なWMをRustで開発する
 
 *Rustは、メモリ安全性や処理速度に優れており*
@@ -150,7 +163,6 @@ X11はクライアント・サーバーモデル
 
 ![bg right:30% height:500](resources/x11.png)
 
-*本プロジェクトでは、XServerとして既存のレファレンス実装を利用 (Xorg)*
 
 ---
 

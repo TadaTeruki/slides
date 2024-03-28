@@ -1,10 +1,10 @@
 ---
 marp: true
-title: Rust製Linuxウインドウマネージャ開発を通じた良い設計へのアプローチ
+title: Linuxウインドウマネージャ開発を通じた良い設計へのアプローチ
 math: mathjax
 author: Teruki TADA
 paginate: true
-footer: Rust製Linuxウインドウマネージャ開発を通じた良い設計へのアプローチ
+footer: Linuxウインドウマネージャ開発を通じた良い設計へのアプローチ
 ---
 
 <style>
@@ -49,7 +49,7 @@ section a:link {
 
 *サイボウズ・ラボユース 成果発表会 (第13期)*
 
-Rust製Linuxウインドウマネージャ開発を通じた
+Linuxウインドウマネージャ開発を通じた
 # 良い設計へのアプローチ
 
 多田 瑛貴 Teruki TADA

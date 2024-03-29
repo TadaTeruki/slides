@@ -105,7 +105,7 @@ https://storage.googleapis.com/misskey-tadateruki-main/misskey-tadateruki-main/8
 # プロジェクトの背景
 
 - LinuxのGUI環境のメジャーな基盤となっている
-  X11プロトコルは、仕様が古く (1987年頃) 
+  X11プロトコルは、仕様が古く
   そのアーキテクチャに様々な問題点や指摘されている
 
 *X11に対する指摘の例: Gajewska, Hania et al. “Why X is not our ideal window system.” Software: Practice and Experience 20 (1990): n. pag.*

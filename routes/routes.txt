@@ -16,3 +16,4 @@ slides/2024/LT/会津合同/welcome/
 slides/2024/LT/ゆるすぎ0130/
 slides/2024/新雪プログラム/0113/
 slides/2024/ラボユース/成果発表会/
+slides/2024/Mariconf運営/サークル紹介/

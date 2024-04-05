@@ -17,4 +17,5 @@ const SLIDE_ROUTES = [
 ["slides/2024/LT/ゆるすぎ0130/", {"source":"index.html","date":"2024/01/30","title":"オープンソースライセンス学び直し","description":"よく使ういろいろなライセンスの学び直し"}],
 ["slides/2024/新雪プログラム/0113/", {"source":"index.html","date":"2024/01/13","title":"新雪プログラム DEMO DAY","description":"新雪プログラムで行っているプロジェクトの最終報告です。"}],
 ["slides/2024/ラボユース/成果発表会/", {"source":"index.html","date":"2024/3/26","title":"Linuxウインドウマネージャ開発を通じた良い設計へのアプローチ","description":"サイボウズ・ラボユースの成果発表の資料"}],
+["slides/2024/Mariconf運営/サークル紹介/", {"source":"index.html","date":"2024-04-05","title":"Mariners' Conference サークル紹介","description":"2024年度 Mariners' Conferenceのサークル紹介です。"}],
 ];

@@ -21,7 +21,7 @@ section::after {
 }
 
 section {
-    background: linear-gradient( rgba(250, 250, 250, 0.5), rgba(250, 250, 250, 0.6) ), url(resources/asahi.webp);
+    background: linear-gradient( rgba(250, 250, 250, 1.0), rgba(250, 250, 250, 0.96) ), url(resources/miraisaiLT.jpeg);
     background-size: cover;
     background-position: center;
     color: rgb(90, 90, 90);
@@ -44,9 +44,11 @@ section a:link {
 
 # Mariners' Conference
 
-サークル紹介 for Miraive OFFLINE 2024
+**サークル紹介** for Miraive OFFLINE 2024
 
 多田 瑛貴 Teruki TADA
+
+![bg right:42%](resources/geekhak.jpeg)
 
 ---
 
@@ -63,7 +65,7 @@ section a:link {
 開催・参加・支援を行う
 技術系サークル
 
-![bg right:30% w:500](resources/mariconf.jpg)
+![bg right:40% w:500](resources/mariconf.jpg)
 
 *結成: 2022年2月*
 *公認サークル登録: 2023年4月*
@@ -86,6 +88,22 @@ section a:link {
 
 ---
 
+![bg](resources/huniki2.webp)
+
+---
+
+![bg](resources/miraisaiLT.jpeg)
+
+---
+
+![bg](resources/springLT3.webp)
+
+---
+
+![bg](resources/huniki1.webp)
+
+---
+
 # 毎年の活動
 
 ---
@@ -95,11 +113,19 @@ section a:link {
 4-5月頃に行われるLT会
 未来大新入生の歓迎を兼ねたイベントです
 
+![bg right:35%](resources/springLT.jpeg)
+![bg right:35% vertical](resources/springLT2.jpeg)
+
 ---
 
 ## Mariners' Conference 未来祭LT
 10月頃に行われるLT会
-はこだて未来大の学園祭 (未来祭) 内で行われます
+はこだて未来大の学園祭
+未来祭内で行われます
+
+![bg right:35%](resources/miraisaiLT.jpeg)
+![bg right:35% vertical](resources/huniki3.webp)
+
 
 ---
 
@@ -112,9 +138,19 @@ section a:link {
 函館市電を貸し切ってLTをします
 *札幌や旭川、東京など遠方からも参加者が！*
 
+![bg right:35%](resources/shiden.jpeg)
+![bg right:35% vertical](resources/shiden2.png)
+
+---
+
 ## 技術書典
 
 技術同人誌を出版・販売します
+
+*毎年秋に参加しています*
+
+![bg right:35%](resources/shoten.jpeg)
+![bg right:35% vertical](resources/shoten2.webp)
 
 ---
 
@@ -127,6 +163,10 @@ section a:link {
 - **CIST IT COMMUNITY** (千歳科学技術大)
 - **UN-FROZEN** (筑波技術大)
 - **Zli** (会津大学)
+
+![bg right:35%](resources/aizu.png)
+![bg right:35% vertical](resources/cist.png)
+
 
 ---
 
@@ -178,9 +218,7 @@ section a:link {
  - Mariners’ Conferenceメンバーとして
     外部イベントの参加 (技術書典など)
 
-
 *サークル費は徴収しません*
-
 
 ---
 
@@ -190,10 +228,12 @@ section a:link {
 
 ## 2024 Spring LT
 
-日時: **5/3 (日)** 13:30 (開場: 13:20)
+日時: **5/3 (日)** 13:30~
 会場: **亀田交流プラザ** 大講義室
 
 今からも参加申込可能です！
+
+![bg right:50%](resources/connpass.png)
 
 ---
 
@@ -204,12 +244,17 @@ section a:link {
 
 自己紹介などを中心に行います
 
-
 技術についてまだ知らない・これから学びたい方も是非どうぞ！
 
 ---
 
-# みなさん、マリカンをよろしくお願いします！
+# よろしくお願いします！
 
 **X**: @mariconf_fun
+
+情報共有など**Discord**にご参加下さい！**→**
+*サークルに加入していなくても参加できます*
+
+![bg right:35% h:300](resources/qr.png)
+
 

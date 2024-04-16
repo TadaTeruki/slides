@@ -1,6 +1,6 @@
 ---
 marp: true
-title: template
+title: 自己紹介LT
 math: mathjax
 author: Teruki TADA
 paginate: true

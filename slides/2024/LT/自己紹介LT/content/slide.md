@@ -32,7 +32,7 @@ em {
 
 # 自己紹介LT
 
-Mariners' Conference ミニLT 
+Mariners' Conference 自己紹介LT 
 多田 瑛貴 ただ てるき
 
 ![bg right:50%](resources/hakodate.webp)
@@ -171,7 +171,7 @@ Mariners' Conference 設立 & 部長
 
 # 自己紹介LT
 
-Mariners' Conference ミニLT 
+Mariners' Conference 自己紹介LT 
 多田 瑛貴 ただ てるき
 
 ![bg right:50%](resources/hakodate.webp)

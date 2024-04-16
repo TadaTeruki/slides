@@ -15,7 +15,6 @@ footer: 自己紹介LT
 section {
     font-family: 'Noto Sans JP', serif;
     background-color: #fff;
-    border: 0.2em solid #f0f0f0;
 }
 
 h1,h2,h3,h4 {

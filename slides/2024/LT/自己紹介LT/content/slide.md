@@ -136,8 +136,6 @@ Mariners' Conference 設立 & 部長
 
 **世界地図ごと生成させてしまおう**
 
-*欲をいうならSIGGRAPHとかに出したい*
-
 ---
 
 ![bg 200%](resources/transport.webp)

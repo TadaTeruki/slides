@@ -1,4 +1,4 @@
 source---           index.html
-date---             2024-04-05
+date---             2024/4/5
 title---            Mariners' Conference サークル紹介
 description---      2024年度 Mariners' Conferenceのサークル紹介です。

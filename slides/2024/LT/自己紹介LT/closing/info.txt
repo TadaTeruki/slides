@@ -1,4 +1,4 @@
 source---           index.html
-date---             2002/8/14
-title---            自己紹介LTオープニング
-description---      オープニングスライドです。
+date---             2024/4/14
+title---            自己紹介LTクロージング
+description---      クロージングスライドです。

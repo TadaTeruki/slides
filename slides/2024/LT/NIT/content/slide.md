@@ -11,7 +11,8 @@ footer: 'Simulationも可視化も クライアントサイドで'
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 section {
-    font-family: 'Noto Sans JP'
+    font-family: 'Noto Sans JP';
+    font-size: x-large;
 }
 
 footer {
@@ -46,15 +47,14 @@ section a:link {
 }
 </style>
 
-# Simulationも可視化もクライアントサイドで
+# SimulationもVisualizationもクライアントサイドで
 WebAssemblyを用いたインタラクティブシミュレーションの実装
 
-*公立はこだて未来大学 複雑系知能学科 B3*
 *多田 瑛貴 ただ てるき*
 
 NIT ほんわかんふぁ 2024
 
-![bg right:13%](resources/hakodate.webp)
+![bg right:15%](resources/hakodate.webp)
 
 ---
 
@@ -67,7 +67,7 @@ NIT ほんわかんふぁ 2024
 
 出身: 福山 *(広島県)* → 京都 *(18年)* → 函館
 
-![bg right:37% w:500](resources/me.jpeg)
+![bg right:50% w:500](resources/me.jpeg)
 
 ---
 

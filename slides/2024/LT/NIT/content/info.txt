@@ -1,4 +1,4 @@
 source---           index.html
 date---             2024/7/14
-title---            Simulationも可視化も、クライアントサイドで-WebAssemblyを用いたインタラクティブなシミュレータ実装
+title---            Simulationも可視化も、クライアントサイドで-WebAssemblyを用いたインタラクティブシミュレーションの実装
 description---      WebAssemblyでシミュレータを実装し、サーバー管理の手間なく配信する

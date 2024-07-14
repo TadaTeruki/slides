@@ -4,7 +4,7 @@ const SLIDE_ROUTES = [
 ["slides/2024/LT/自己紹介LT/content/", {"source":"index.html","date":"2024/4/14","title":"自己紹介LT","description":"自己紹介LT"}],
 ["slides/2024/LT/自己紹介LT/closing/", {"source":"index.html","date":"2024/4/14","title":"自己紹介LTクロージング","description":"クロージングスライドです。"}],
 ["slides/2024/LT/ゆるすぎ/content/", {"source":"index.html","date":"2024/01/30","title":"オープンソースライセンス学び直し","description":"よく使ういろいろなライセンスの学び直し"}],
-["slides/2024/LT/NIT/content/", {"source":"index.html","date":"2024/7/14","title":"SimulationもVisualizationも、クライアントサイドで","description":"WebAssemblyを用いた高速・快適なインタラクティブシミュレーション開発"}],
+["slides/2024/LT/NIT/content/", {"source":"index.html","date":"2024/7/14","title":"SimulationもVisualizationも、クライアントサイドで","description":"WebAssemblyを用いた高速・快適なインタラクティブシミュレータ開発"}],
 ["slides/2024/LT/会津合同/content/", {"source":"index.html","date":"2024/02/15","title":"我が家のゴミ・Ops","description":"ゴミが溜まって大変なことになる問題を解決するシステム"}],
 ["slides/2024/LT/会津合同/welcome/", {"source":"index.html","date":"2024/02/15","title":"はこだて未来大へようこそ","description":"はこだて未来大を紹介します"}],
 ["slides/2024/ラボユース/成果発表会/", {"source":"index.html","date":"2024/3/26","title":"Linuxウインドウマネージャ開発を通じた良い設計へのアプローチ","description":"サイボウズ・ラボユースの成果発表の資料"}],

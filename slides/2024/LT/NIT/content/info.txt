@@ -1,4 +1,4 @@
 source---           index.html
 date---             2024/7/14
 title---            SimulationもVisualizationも、クライアントサイドで
-description---      WebAssemblyを用いた高速・快適なインタラクティブシミュレーション開発
+description---      WebAssemblyを用いた高速・快適なインタラクティブシミュレータ開発

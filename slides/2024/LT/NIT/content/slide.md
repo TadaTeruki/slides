@@ -51,7 +51,7 @@ section a:link {
 </style>
 
 # SimulationもVisualizationも、クライアントサイドで
-WebAssemblyを用いた高速・快適なインタラクティブシミュレーション開発
+WebAssemblyを用いた高速・快適なインタラクティブシミュレータ開発
 
 *多田 瑛貴 ただ てるき*
 

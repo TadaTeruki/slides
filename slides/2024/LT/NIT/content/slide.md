@@ -1,19 +1,14 @@
 ---
 marp: true
-title: Simulationも可視化も、クライアントサイドで - WebAssemblyを用いたインタラクティブシミュレーションの実装
+title: SimulationもVisualizationも クライアントサイドで
 math: mathjax
 author: Teruki TADA
 paginate: true
-footer: 'Simulationも可視化も クライアントサイドで'
+footer: 'SimulationもVisualizationも クライアントサイドで'
 ---
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-
-section {
-    font-family: 'Noto Sans JP';
-    font-size: x-large;
-}
 
 footer {
     color: rgb(200, 200, 200);
@@ -25,11 +20,19 @@ section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
 }
 
+:root {
+  --color-back: rgb(255, 255, 255);
+  --color-side: rgb(230, 250, 250);
+}
+
 section {
-    background: linear-gradient( rgba(255, 255, 255, 1.0), rgba(250, 250, 250, 1.0) ), url(resources/miraisaiLT.jpeg);
+    background: linear-gradient(-30deg, var(--color-side) 7.5%, var(--color-back) 7.5%, var(--color-back) 94%, var(--color-side) 94%);
     background-size: cover;
     background-position: center;
     color: rgb(90, 90, 90);
+    font-family: 'Noto Sans JP';
+    font-size: x-large;
+    text-decoration: none;
 }
 
 em {
@@ -39,7 +42,7 @@ em {
 }
 
 section h1,h2,h3,h4 {
-    color: rgb(100, 140, 150);
+    color: rgb(90, 130, 140);
 }
 
 section a:link {
@@ -47,14 +50,14 @@ section a:link {
 }
 </style>
 
-# SimulationもVisualizationもクライアントサイドで
-WebAssemblyを用いたインタラクティブシミュレーションの実装
+# SimulationもVisualizationも、クライアントサイドで
+WebAssemblyを用いた高速・快適なインタラクティブシミュレーション開発
 
 *多田 瑛貴 ただ てるき*
 
 NIT ほんわかんふぁ 2024
 
-![bg right:15%](resources/hakodate.webp)
+![bg right:10%](resources/hakodate.webp)
 
 ---
 
@@ -76,8 +79,6 @@ NIT ほんわかんふぁ 2024
 主な関心
 - 地理 (地図)
 - Webフロントエンド
-- シミュレーション
-  特に手続き的モデリング
 
 使用言語: Rust/Typescript/Go
 
@@ -136,7 +137,7 @@ LTサークルMariners' Conference 設立 & 部長
 
 **Webフロントエンドを使うという方向性を検討してみる**
 
-- View部分をWebフロントエンドとして開発し
+- ビジュアライザ部分をWebフロントエンドとして開発し
   シミュレーション部分と入出力を通信
 
 *TauriやElectronのアプローチもこちら側に含めるとする*
@@ -164,13 +165,14 @@ LTサークルMariners' Conference 設立 & 部長
   デリケートな処理を比較的安全に扱える
 
 一方で
- - GUI/グラフィックスの機能は、比較的扱いづらい場合が多い
+ - GUI/グラフィックスの出力は、
+  Webフロントエンドと比較すると心細く感じる部分が多い
 
 ---
 
 ## Webフロントエンド (JS/TS)
 
-- GUI/グラフィックスを扱うのに向いている
+- GUI/グラフィックスを扱うのに大変便利
   - 豊富な開発ツール + 高度な標準API
     - GUIを構築するフレームワークの多様性は言わずもがな
     - グラフィックス系のライブラリも、Canvas2D・WebGLを源流として
@@ -207,7 +209,7 @@ Webフロントエンドの高い表現の幅を生かしながら
 # では...
 
 シミュレータとWebフロントエンド
-どのように連携するのが適切だろうか？
+どのように連携するのが適切だろう？
 
 ---
 
@@ -340,22 +342,12 @@ Cloudflare Pages、GitHub Pagesをはじめ
 静的サイトのホスティングは無料で間に合う場合が多い
   
 - 費用負担が最小限
-- モノレポ、かつデプロイ先も一つで済む
+- モノレポで完結、かつデプロイ先も一つで済む
 
 全体として、管理の負担がほとんどないのは魅力
 
 多くのユースケースではこちらの方が望ましいと考えられる
 *個人や少人数向けでもこちらで十分*
-
----
-
-# 個人開発での事例
-
-Hokkaido Generatorの場合
-
-- シミュレータをRustで作成し、WebAssemblyビルド
-- TypeScript+Svelteでビジュアライザを作成
-- GitHub ActionsでWebAssemblyを埋め込み
 
 ---
 

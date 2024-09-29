@@ -5,7 +5,6 @@ const SLIDE_ROUTES = [
 ["slides/2024/LT/会津合同/welcome/", {"source":"index.html","date":"2024/02/15","title":"はこだて未来大へようこそ","description":"はこだて未来大を紹介します"}],
 ["slides/2024/LT/会津合同/content/", {"source":"index.html","date":"2024/02/15","title":"我が家のゴミ・Ops","description":"ゴミが溜まって大変なことになる問題を解決するシステム"}],
 ["slides/2024/LT/函館高専合同/メイン/", {"source":"index.html","date":"2024/09/28","title":"どう向き合う？WebGPUのお話","description":"WebGPUへの概要から入門、所感まで"}],
-["slides/2024/LT/函館高専合同/大学紹介/", {"source":"index.html","date":"2024/09/28","title":"はこだて未来大へようこそ","description":"はこだて未来大を紹介します"}],
 ["slides/2024/LT/自己紹介LT/content/", {"source":"index.html","date":"2024/4/14","title":"自己紹介LT","description":"自己紹介LT"}],
 ["slides/2024/LT/自己紹介LT/closing/", {"source":"index.html","date":"2024/4/14","title":"自己紹介LTクロージング","description":"クロージングスライドです。"}],
 ["slides/2024/LT/ゆるすぎ/content/", {"source":"index.html","date":"2024/01/30","title":"オープンソースライセンス学び直し","description":"よく使ういろいろなライセンスの学び直し"}],

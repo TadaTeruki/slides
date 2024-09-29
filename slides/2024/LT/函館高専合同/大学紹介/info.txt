@@ -1,0 +1,4 @@
+source---           index.html
+date---             2024/09/28
+title---            はこだて未来大へようこそ
+description---      はこだて未来大を紹介します

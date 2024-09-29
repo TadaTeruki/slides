@@ -1,0 +1,4 @@
+source---           index.html
+date---             2024/09/28
+title---            どう向き合う？WebGPUのお話
+description---      WebGPUへの概要から入門、所感まで

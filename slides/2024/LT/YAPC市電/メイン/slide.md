@@ -59,6 +59,8 @@ https://peruki.dev
 多田 瑛貴 ただ てるき
 はこだて未来大 B3
 
+![bg right:50% w:300](./img/peruki.jpeg)
+
 ---
 
 みなさん

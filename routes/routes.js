@@ -1,6 +1,7 @@
 const SLIDE_ROUTES = [
 ["slides/2024/Mariconf運営/サークル紹介/", {"source":"index.html","date":"2024/4/5","title":"Mariners' Conference サークル紹介","description":"2024年度 Mariners' Conferenceのサークル紹介です。"}],
 ["slides/2024/ラボユース/成果発表会/", {"source":"index.html","date":"2024/3/26","title":"Linuxウインドウマネージャ開発を通じた良い設計へのアプローチ","description":"サイボウズ・ラボユースの成果発表の資料"}],
+["slides/2024/LT/YAPC市電/メイン/", {"source":"index.html","date":"2024/10/6","title":"Webグラフィックス","description":"WebGPUへの概要から入門、所感まで"}],
 ["slides/2024/LT/NIT/content/", {"source":"index.html","date":"2024/7/14","title":"SimulationもVisualizationも、クライアントサイドで","description":"WebAssemblyを用いた高速・快適なインタラクティブシミュレータ開発"}],
 ["slides/2024/LT/会津合同/welcome/", {"source":"index.html","date":"2024/02/15","title":"はこだて未来大へようこそ","description":"はこだて未来大を紹介します"}],
 ["slides/2024/LT/会津合同/content/", {"source":"index.html","date":"2024/02/15","title":"我が家のゴミ・Ops","description":"ゴミが溜まって大変なことになる問題を解決するシステム"}],

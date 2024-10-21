@@ -1,4 +1,4 @@
 source---           index.html
 date---             2024/10/6
-title---            Webグラフィックス
-description---      WebGPUへの概要から入門、所感まで
+title---            Webのグラフィックスを語りたい
+description---      WebGPUとwgpuの話
